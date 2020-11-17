@@ -1,0 +1,27 @@
+@import url(reset.css);
+/**** FONT ****/
+@font-face {
+    font-family: 'Arkhip_font';
+    src: url('../all_font/arkhip/Arkhip_font.eot');
+    src: url('../all_font/arkhip/Arkhip_font.eot') format('embedded-opentype'),
+    url('../all_font/arkhip/Arkhip_font.woff2') format('woff2'),
+    url('../all_font/arkhip/Arkhip_font.woff') format('woff'),
+    url('../all_font/arkhip/Arkhip_font.ttf') format('truetype'),
+    url('../all_font/arkhip/Arkhip_font.svg#Arkhip_font') format('svg');
+}
+/**** end font ****/
+img{
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+::-webkit-input-placeholder { color: #323232 }
+::-moz-placeholder          { color: #323232 }
+:-moz-placeholder           { color: #323232 }
+:-ms-input-placeholder      { color: #323232 }
+.text_overflow{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
