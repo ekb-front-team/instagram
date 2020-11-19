@@ -445,9 +445,8 @@ main {
 }
 
 .description_title-btn-ellipsis {
-    width: 22px;
-    border-top: 4px dotted #262626;
     margin: 0 0 0 16px;
+    font-size: 18px;
 }
 
 .main_top_description-statistics {
