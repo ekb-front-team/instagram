@@ -583,29 +583,20 @@ main {
 .main-content {
     width: 100%;
     margin: 2px 0 0 0;
-}
-
-.main_content-bar {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.main_content_bar-wrapper:first-child {
-    margin: 0 25px 25px 0;
+.main_content_bar-wrapper {
+    width: 32%;
+    max-width: 295px;
+    margin: 0 0 18px 0;
 }
-
-.main_content_bar-wrapper:nth-child(2) {
-    margin: 0 0 25px 0;
-}
-
-.main_content_bar-wrapper:last-child {
-    margin: 0 0 25px 25px;
-} 
 
 .content_bar_wrapper-img {
     width: 100%;
-    max-width: 295px;
 }
-
 
 /*pop_up*/
 

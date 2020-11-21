@@ -17,19 +17,7 @@
     .main_aside_storys-item {
         margin: 0 31px 0 0;
         transition: 1s ease;
-    }
-
-    .main_content_bar-wrapper:first-child {
-        margin: 0 2px 0 0;
-    }
-    
-    .main_content_bar-wrapper:nth-child(2) {
-        margin: 0 0 0 0;
-    }
-    
-    .main_content_bar-wrapper:last-child {
-        margin: 0 0 0 2px;
-    }
+}
 }
 
 
@@ -150,9 +138,13 @@
         transition: 0.5s ease;
     }
 
+    .main_content_bar-wrapper {
+        margin: 0 0 2px 0;
+    }
+
     .popup {
         padding: 0 40px;
-    }  
+    }   
 }
 
 
