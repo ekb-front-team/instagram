@@ -15,7 +15,7 @@ body{
 
 /* header */
 header{
-    background-color: white;
+    background: #fff;
     border-bottom: 1px solid #DBDBDB;
     padding: 17px 20px;
     width: 100%;
@@ -67,7 +67,7 @@ header{
 
 .five{
     border-radius: 50%;
-    background-color: #DC565B;
+    background: #DC565B;
     color:white;
     top:-7px;
     right: -9px;
