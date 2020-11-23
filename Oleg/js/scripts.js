@@ -1,14 +1,15 @@
 $(document).ready(function () {
-  let container = document.getElementById("modal_container");
-  let body = document.getElementById("body");
-  let viewBtn = $(".gallery_view");
-  let modalImg = document.getElementById("gallery_item_view");
-  let msgCounter = +$(".msg_counter").attr("data-counter");
-  let moreModal = document.getElementById("modal_view-more");
-  let togglePosts = $("#togglePosts");
-  let toggleTagged = $("#toggleTagged");
-  let gallery = document.querySelector(".gallery_photos");
-  let taggs = document.querySelector("#taggs");
+  let container = document.querySelector("#modal_container"),
+    body = document.querySelector("body"),
+    gallery = document.querySelector(".gallery_photos"),
+    taggs = document.querySelector("#taggs"),
+    moreModal = document.querySelector("#modal_view-more"),
+    modalImg = document.querySelector("#gallery_item_view"),
+    viewBtn = $(".gallery_view"),
+    msgCounter = +$(".msg_counter").attr("data-counter"),
+    togglePosts = $("#togglePosts"),
+    name = $(".name");
+  toggleTagged = $("#toggleTagged");
 
   moreModal.style = "display: none !important";
   modalImg.style = "display: none !important";
@@ -22,7 +23,7 @@ $(document).ready(function () {
   });
 
   $("#modal_container").click(function () {
-    container.style = "display: none";
+    this.style = "display: none";
     body.style = "overflow-y: auto";
     moreModal.style = "display: none !important";
   });
@@ -85,5 +86,15 @@ $(document).ready(function () {
   toggleTagged.click(function () {
     gallery.style = "display: none";
     taggs.style = "display: block";
+  });
+
+  name.click(function () {
+    let changeName = prompt("Введите новый ник: ", "");
+
+    while (changeName == "" || changeName.length > 10) {
+      changeName = prompt("Введите новый ник: ", "");
+    }
+
+    name.text(changeName);
   });
 });
