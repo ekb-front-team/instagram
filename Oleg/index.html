@@ -1,154 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Instagram-copy</title>
-  <link rel="shortcut icon" href="./images/icon_logo.png"/>
-  <link rel="stylesheet" href="./css/font-awesome.min.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/fonts.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram-copy</title>
+    <link rel="shortcut icon" href="./images/icon_logo.png" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-  <script src="./js/scripts.js" defer></script> 
-</head>
-<body id="body">
-  <header class="header">
-    <div class="container">
-      <div class="header_wrapper">
-        <a href="index.html" class="header_logo_link">
-          <img src="./images/logo.svg" alt="logo" class="header_logo_img">
-        </a>
-        <form action="#" class="header_search">
-          <input type="search" name="search" id="search" placeholder="Search" class="header_search_input">
-        </form>
-        <nav class="navigation">
-          <ul class="navigation_list">
-            <li><a href="#"><img src="./images/home_icon.svg" alt="home" class="menu_link"></a></li>
-            <li><a href="#" class="msg_counter" data-counter="0"><img src="./images/messages_icon.svg" alt="messages" class="menu_link"></a></li>
-            <li><a href="#"><img src="./images/map_icon.svg" alt="map" class="menu_link"></a></li>
-            <li><a href="#"><img src="./images/likes_icon.svg" alt="likes" class="menu_link"></a></li>
-            <li><a href="#" class="menu_link user_avatar"></a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <main class="main">
-    <section class="user_profile">
+    <script src="./js/scripts.js" defer></script>
+  </head>
+  <body id="body">
+    <header class="header">
       <div class="container">
-        <div class="user_profile_wrapper">
-          <div class="user_profile_photo"></div>
-          <div class="user_profile_information">
-            <div class="information_follow">
-              <span class="name">name</span>
-              <button class="follow" id="follow"><span>Follow</span></button>
-              <select href="#" class="more_arrow">
-                <option value=""></option>
-                <option value="Lorem">Lorem ipsum dolor sit amet.</option>
-                <option value="ipsum">Lorem ipsum dolor sit amet.</option>
-                <option value="dolor">Lorem ipsum dolor sit amet.</option>
-                <option value="sit">Lorem ipsum dolor sit amet.</option>
-              </select>
-              <div class="another_dots"><a href="#"><svg width="20" height="4" viewBox="0 0 20 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="2" cy="2" r="2" fill="#262626"/>
-                <circle cx="10" cy="2" r="2" fill="#262626"/>
-                <circle cx="18" cy="2" r="2" fill="#262626"/>
-                </svg>
-                </a>
+        <div class="header_wrapper">
+          <a href="index.html" class="header_logo_link">
+            <img src="./images/logo.svg" alt="logo" class="header_logo_img" />
+          </a>
+          <form action="#" class="header_search">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search"
+              class="header_search_input"
+            />
+          </form>
+          <nav class="navigation">
+            <ul class="navigation_list">
+              <li>
+                <a href="#"
+                  ><img
+                    src="./images/home_icon.svg"
+                    alt="home"
+                    class="menu_link"
+                /></a>
+              </li>
+              <li>
+                <a href="#" class="msg_counter" data-counter="0"
+                  ><img
+                    src="./images/messages_icon.svg"
+                    alt="messages"
+                    class="menu_link"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./images/map_icon.svg" alt="map" class="menu_link"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./images/likes_icon.svg"
+                    alt="likes"
+                    class="menu_link"
+                /></a>
+              </li>
+              <li><a href="#" class="menu_link user_avatar"></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="user_profile">
+        <div class="container">
+          <div class="user_profile_wrapper">
+            <div class="user_profile_photo"></div>
+            <div class="user_profile_information">
+              <div class="information_follow">
+                <span class="name">name</span>
+                <button class="follow" id="follow"><span>Follow</span></button>
+                <select href="#" class="more_arrow">
+                  <option value=""></option>
+                  <option value="Lorem">Lorem ipsum dolor sit amet.</option>
+                  <option value="ipsum">Lorem ipsum dolor sit amet.</option>
+                  <option value="dolor">Lorem ipsum dolor sit amet.</option>
+                  <option value="sit">Lorem ipsum dolor sit amet.</option>
+                </select>
+                <div class="another_dots">
+                  <a href="#"
+                    ><svg
+                      width="20"
+                      height="4"
+                      viewBox="0 0 20 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="2" cy="2" r="2" fill="#262626" />
+                      <circle cx="10" cy="2" r="2" fill="#262626" />
+                      <circle cx="18" cy="2" r="2" fill="#262626" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="user_profile_stat">
+                <ul class="stat_list">
+                  <li><span>79</span> posts</li>
+                  <li><span>379</span> followers</li>
+                  <li><span>179</span> following</li>
+                </ul>
+              </div>
+              <div class="user_profile_descr">
+                <span>Name</span>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text.
+                </p>
+                <a href="#" class="descr_link">bit.ly/35Ce3mX</a>
               </div>
             </div>
-            <div class="user_profile_stat">
-              <ul class="stat_list">
-                <li><span>79</span> posts</li>
-                <li><span>379</span> followers</li>
-                <li><span>179</span> following</li>
-              </ul>
+          </div>
+        </div>
+      </section>
+      <section class="stories">
+        <div class="container">
+          <div class="stories_wrapper">
+            <div class="stories_item">
+              <div class="storie_preview">
+                <img src="./images/test_bg.png" alt="" class="story_img" />
+              </div>
+              <p class="storie_kind">Name</p>
             </div>
-            <div class="user_profile_descr">
-              <span>Name</span>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-              <a href="#" class="descr_link">bit.ly/35Ce3mX</a>
+            <div class="stories_item">
+              <div class="storie_preview">
+                <img src="./images/test_bg.png" alt="" class="story_img" />
+              </div>
+              <p class="storie_kind">Name</p>
+            </div>
+            <div class="stories_item">
+              <div class="storie_preview">
+                <img src="./images/test_bg.png" alt="" class="story_img" />
+              </div>
+              <p class="storie_kind">Name</p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="stories">
-      <div class="container">
-        <div class="stories_wrapper">
-          <div class="stories_item">
-            <div class="storie_preview">
-              <img src="./images/test_bg.png" alt="" class="story_img">
-            </div>
-            <p class="storie_kind">Name</p>
+      </section>
+      <section class="gallery">
+        <div class="container">
+          <div class="gallery_header">
+            <button class="gallery_view active_view">
+              <i class="fa fa-th fa-icon" aria-hidden="true"></i>Posts
+            </button>
+            <button class="gallery_view">
+              <i class="fa fa-address-book-o fa-icon" aria-hidden="true"></i
+              >Tagged
+            </button>
           </div>
-          <div class="stories_item">
-            <div class="storie_preview">
-              <img src="./images/test_bg.png" alt="" class="story_img">
+          <div class="gallery_photos">
+            <div class="photo_wrp">
+              <img
+                src="./images/gallery/img1.jpg"
+                alt="photo"
+                class="gallery_item"
+              />
             </div>
-            <p class="storie_kind">Name</p>
+            <div class="photo_wrp">
+              <img
+                src="./images/gallery/img2.jpg"
+                alt="photo"
+                class="gallery_item"
+              />
+            </div>
+            <div class="photo_wrp">
+              <img
+                src="./images/gallery/img3.jpg"
+                alt="photo"
+                class="gallery_item"
+              />
+            </div>
+            <div class="photo_wrp">
+              <img
+                src="./images/gallery/img4.jpg"
+                alt="photo"
+                class="gallery_item"
+              />
+            </div>
+            <div class="photo_wrp">
+              <img
+                src="./images/gallery/img5.jpg"
+                alt="photo"
+                class="gallery_item"
+              />
+            </div>
+            <div class="photo_wrp">
+              <img
+                src="./images/gallery/img6.jpg"
+                alt="photo"
+                class="gallery_item"
+              />
+            </div>
+            <div class="photo_wrp">
+              <img
+                src="./images/gallery/img4.jpg"
+                alt="photo"
+                class="gallery_item"
+              />
+            </div>
+            <div class="photo_wrp">
+              <img
+                src="./images/gallery/img1.jpg"
+                alt="photo"
+                class="gallery_item"
+              />
+            </div>
+            <div class="photo_wrp">
+              <img
+                src="./images/gallery/img2.jpg"
+                alt="photo"
+                class="gallery_item"
+              />
+            </div>
+            <div class="photo_wrp">
+              <img
+                src="./images/gallery/img3.jpg"
+                alt="photo"
+                class="gallery_item"
+              />
+            </div>
+            <div class="photo_wrp">
+              <img
+                src="./images/gallery/img4.jpg"
+                alt="photo"
+                class="gallery_item"
+              />
+            </div>
+            <div class="photo_wrp">
+              <img
+                src="./images/gallery/img5.jpg"
+                alt="photo"
+                class="gallery_item"
+              />
+            </div>
           </div>
-          <div class="stories_item">
-            <div class="storie_preview">
-              <img src="./images/test_bg.png" alt="" class="story_img">
-            </div>
-            <p class="storie_kind">Name</p>
+        </div>
+        <div class="modal_container" id="modal_container">
+          <div class="modal_view" id="modal_view">
+            <img
+              src=""
+              alt="photo"
+              class="gallery_img view_modal_img"
+              id="gallery_item_view"
+            />
           </div>
         </div>
-      </div>
-    </section>
-    <section class="gallery">
-      <div class="container">
-        <div class="gallery_header">
-          <button class="gallery_view active_view"><i class="fa fa-th fa-icon" aria-hidden="true"></i>Posts</button>
-          <button class="gallery_view"><i class="fa fa-address-book-o fa-icon" aria-hidden="true"></i>Tagged</button>
-        </div>
-        <div class="gallery_photos">
-            <div class="photo_wrp">
-              <img src="./images/gallery/img1.jpg" alt="photo" class="gallery_item">
-            </div>
-            <div class="photo_wrp">
-              <img src="./images/gallery/img2.jpg" alt="photo" class="gallery_item">
-            </div>
-            <div class="photo_wrp">
-              <img src="./images/gallery/img3.jpg" alt="photo" class="gallery_item">
-            </div>
-            <div class="photo_wrp">
-              <img src="./images/gallery/img4.jpg" alt="photo" class="gallery_item">
-            </div>
-            <div class="photo_wrp">
-              <img src="./images/gallery/img5.jpg" alt="photo" class="gallery_item">
-            </div>
-            <div class="photo_wrp">
-              <img src="./images/gallery/img6.jpg" alt="photo" class="gallery_item">
-            </div>
-            <div class="photo_wrp">
-              <img src="./images/gallery/img4.jpg" alt="photo" class="gallery_item">
-            </div>
-            <div class="photo_wrp">
-              <img src="./images/gallery/img1.jpg" alt="photo" class="gallery_item">
-            </div>
-            <div class="photo_wrp">
-              <img src="./images/gallery/img2.jpg" alt="photo" class="gallery_item">
-            </div>
-            <div class="photo_wrp">
-              <img src="./images/gallery/img3.jpg" alt="photo" class="gallery_item">
-            </div>
-            <div class="photo_wrp">
-              <img src="./images/gallery/img4.jpg" alt="photo" class="gallery_item">
-            </div>
-            <div class="photo_wrp">
-              <img src="./images/gallery/img5.jpg" alt="photo" class="gallery_item">
-            </div>
-        </div>
-      </div>
-      <div class="modal_container" id="modal_container">
-        <div class="modal_view" id="modal_view">
-          <img src="" alt="photo" class="gallery_img view_modal_img" id="gallery_item_view">
-        </div>
-      </div>
-    </section>
-  </main>
-</body>
+      </section>
+    </main>
+  </body>
 </html>
