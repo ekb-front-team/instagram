@@ -72,7 +72,7 @@ body {
 .msg_counter::after {
   content: attr(data-counter);
   text-align: center;
-  display: block;
+  display: none;
   width: 18px;
   height: 18px;
   color: #fff;
@@ -84,6 +84,10 @@ body {
   z-index: 2;
   top: -6px;
   left: 10px;
+}
+
+.toggleAfter::after {
+  display: block;
 }
 
 .user_avatar {
@@ -160,8 +164,9 @@ body {
   box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);
 }
 
-.follow:active {
-  transform: scale(0.8);
+.follow:active,
+.more_arrow:active {
+  transform: scale(0.9);
   box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);
 }
 
@@ -169,17 +174,16 @@ body {
   background: #4094ef;
   width: 33px;
   height: 28px;
-  text-align: center;
-  line-height: 22px;
+  border: none;
   border-radius: 3px;
   transition: 0.6s;
   box-sizing: border-box;
-  appearance: none;
   background-image: url(../images/more_icon.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   outline: none;
   position: relative;
+  cursor: pointer;
 }
 
 .another_dots a {
@@ -360,26 +364,30 @@ body {
 .modal_container {
   display: none;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: rgba(57, 57, 57, 0.7);
   position: fixed;
-  z-index: 99888;
+  z-index: 99999;
   left: 0;
   top: 0;
   justify-content: center;
   align-items: center;
 }
 
-.modal_view {
-  display: block;
+.view_modal_img {
   max-width: 700px;
-  text-align: center;
-  padding: 50px 20px;
+  max-height: 500px;
 }
 
-.view_modal_img {
-  transform: scale(1);
-  z-index: 99999;
+
+.modal_view-more {
+  display: block;
+  width: 400px;
+  padding: 40px;
+  z-index: 999999;
+  line-height: 40px;
+  text-align: center;
+  background-color: #fff;
 }
 
 /*modal-view-end*/
@@ -409,12 +417,9 @@ body {
 }
 
 @media (max-width: 420px) {
-  .photo_wrp {
-    flex: 0 0 180px;
+  .gallery_item {
+    height: 130px;
   }
-}
-
-@media (max-width: 420px) {
   body,
   html {
     min-width: 420px;
