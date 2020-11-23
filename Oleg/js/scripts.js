@@ -43,7 +43,7 @@ $(document).ready(function() {
     if (msgCounter == 99) {
       msgCounter = 0;
     }
-  }, 8000);
+  }, 5000);
 
   $('.msg_counter').click(function(){
     $('.msg_counter').attr('data-counter', '0');
