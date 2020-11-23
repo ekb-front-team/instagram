@@ -339,6 +339,7 @@ body {
 
 .photo_wrp {
   max-height: 295px;
+  max-width: 295px;
   flex: 1 0 30%;
   margin: 7px;
   box-sizing: border-box;
@@ -359,6 +360,16 @@ body {
 
 /*gallery-end*/
 
+/*taggs*/
+
+#taggs {
+  display: none;
+  text-align: center;
+  border: 1px solid #dbdbdb;
+}
+
+/*taggs-end*/
+
 /*modal-view*/
 
 .modal_container {
@@ -378,7 +389,6 @@ body {
   max-width: 700px;
   max-height: 500px;
 }
-
 
 .modal_view-more {
   display: block;

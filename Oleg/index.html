@@ -141,10 +141,10 @@
       <section class="gallery">
         <div class="container">
           <div class="gallery_header">
-            <button class="gallery_view active_view">
+            <button class="gallery_view active_view" id="togglePosts">
               <i class="fa fa-th fa-icon" aria-hidden="true"></i>Posts
             </button>
-            <button class="gallery_view">
+            <button class="gallery_view" id="toggleTagged">
               <i class="fa fa-address-book-o fa-icon" aria-hidden="true"></i
               >Tagged
             </button>
@@ -276,6 +276,15 @@
                 class="gallery_item"
               />
             </div>
+          </div>
+          <div id="taggs">
+            <!-- <h1>Данный пользователь нигде не отмечен</h1> -->
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A402aa2b9d1cb0a29ea7783336ddd8296a4fee1972040bc6c04024c2d48d377a2&amp;source=constructor"
+              width="100%"
+              height="400"
+              frameborder="0"
+            ></iframe>
           </div>
         </div>
         <div class="modal_container" id="modal_container">

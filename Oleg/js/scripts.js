@@ -5,6 +5,10 @@ $(document).ready(function () {
   let modalImg = document.getElementById("gallery_item_view");
   let msgCounter = +$(".msg_counter").attr("data-counter");
   let moreModal = document.getElementById("modal_view-more");
+  let togglePosts = $("#togglePosts");
+  let toggleTagged = $("#toggleTagged");
+  let gallery = document.querySelector(".gallery_photos");
+  let taggs = document.querySelector("#taggs");
 
   moreModal.style = "display: none !important";
   modalImg.style = "display: none !important";
@@ -71,5 +75,15 @@ $(document).ready(function () {
     container.style = "display: flex";
     body.style = "overflow-y: hidden";
     moreModal.style = "display: block";
+  });
+
+  togglePosts.click(function () {
+    gallery.style = "display: flex";
+    taggs.style = "display: none";
+  });
+
+  toggleTagged.click(function () {
+    gallery.style = "display: none";
+    taggs.style = "display: block";
   });
 });
