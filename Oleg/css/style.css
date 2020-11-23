@@ -349,34 +349,39 @@ body {
 	left: 0;
 } */
 
+.gallery .container {
+	padding: 0 10px;
+}
+
 .gallery_photos {
-	/* display: grid;
+	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
 	gap: 25px;
-	align-content: center; */
-	display: flex;
+	align-content: center;
+	/*display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
+	flex-wrap: wrap; */
 }
 
 .gallery_item {
-	width: 295px;
-	height: 295px;
 	align-self: center;
 	justify-self: center;
-	overflow: hidden;
 	box-sizing: border-box;
 	transition: 0.5s;
 	cursor: pointer;
 	object-fit: cover;
-	margin: 0.8%;
 }
 
-.gallery_img {
+.photo_wrp {
+	width: 295px;
+	height: 295px;
+}
+
+.photo_wrp img {
 	width: 100%;
 	height: 100%;
-	object-fit: contain;
+	object-fit: cover;
 }
 
 .gallery_item:hover {
@@ -423,29 +428,37 @@ body {
 	padding: 0 20px 0 20px;
 }
 
-@media (max-width: 954px) {
+@media (max-width: 936px) {
 	.gallery .container {
 		max-width: 992px;
 		width: 100%;
+		padding: 20px;
 	}
 
-	/* .gallery_item {
+	.photo_wrp {
 		justify-self: self-end;
 	}
 
-	.gallery_item:nth-child(even) {
+	.photo_wrp:nth-child(even) {
 		justify-self: self-start;
-	} */
-
-	.gallery_photos {
-		/* display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(295px, 1fr)); */
 	}
 
+	.photo_wrp {
+		height: 400px;
+		width: 100%;
+	}
+
+	.gallery_photos {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+	}
+
+	/* 
 	.gallery_item {
 		width: 45%;
 		margin: 3px;
-	}
+	} */
+
 
 }
 
@@ -476,19 +489,44 @@ body {
 
 }
 
+@media (max-width: 718px) {
+	.photo_wrp {
+		max-height: 300px;
+		max-width: 350px;
+	}
+
+}
+
+@media (max-width: 615px) {
+	.photo_wrp {
+		height: 250px;
+		width: 250px;
+	}
+
+	.gallery_photos {
+		grid-template-columns: repeat(2, 250px);
+		justify-content: space-between;
+	}
+
+	.gallery .container {
+		padding: 0;
+	}
+	.photo_wrp {
+		justify-self: center !important;
+		align-self: center !important;
+	}
+
+	.photo_wrp:nth-child(even) {
+		justify-self: center !important;
+		align-self: center !important;
+	}
+}
+
+
+
 @media (max-width: 672px) {
 	.header_search {
 		display: none;
-	}
-
-	.gallery_item {
-		justify-self: center !important;
-		align-self: center !important;
-	}
-
-	.gallery_item:nth-child(even) {
-		justify-self: center !important;
-		align-self: center !important;
 	}
 
 	.navigation_list {
@@ -496,7 +534,7 @@ body {
 	}
 }
 
-@media (max-width: 3352px) {
+@media (max-width: 352px) {
 
 	body,
 	html {
