@@ -6,6 +6,9 @@ $(document).ready(function () {
   let msgCounter = +$(".msg_counter").attr("data-counter");
   let moreModal = document.getElementById("modal_view-more");
 
+  moreModal.style = "display: none !important";
+  modalImg.style = "display: none !important";
+
   $(".gallery_item").click(function () {
     modalImg.style = "display: block";
     let imgAddr = $(this).attr("src");
