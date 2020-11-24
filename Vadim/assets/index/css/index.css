@@ -598,22 +598,40 @@ main {
     width: 100%;
 }
 
-/*pop_up*/
-
-.popup {
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -0%);
-    background: rgb(0 0 0 / 85%);
+.modal {
     width: 100%;
-    height: 100vh;
+    max-width: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    display: none;
+}
+
+.modal-overlay {
+    position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	height: 100vh;
+	opacity: 0;
+	visibility: hidden;
+    transition: all 0.3s ease-in-out;
     z-index: 2000;
     padding: 0 90px;
 }
 
-.popup-content {
+.modal-overlay--visible {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s ease-in-out;
+}
+
+.modal--visible {
+	display: block;
+}
+
+.modal-content {
     width: 100%;
-    max-width: 500px;
 }
