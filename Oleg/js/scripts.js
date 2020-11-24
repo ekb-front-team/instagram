@@ -96,23 +96,12 @@ $(document).ready(function () {
     gallery.hide();
     taggs.show();
   });
-
-  // name.click(function () {
-  //   let changeName = prompt("Введите новый ник: ", "");
-  //   if (changeName !== "" && changeName.length < 10) {
-  //     name.text(changeName);
-  //     nameDescr.text(changeName);
-  //   } else {
-  //     changeName = prompt("Введите новый ник: ", "");
-  //   }
-  // });
-
   name.click(function () {
     let changeName = "";
     checkPrompt();
 
     function checkPrompt() {
-      if (changeName !== null && changeName.length < 10 && changeName !== "") {
+      if (changeName && changeName.length < 10) {
         name.text(changeName);
         nameDescr.text(changeName);
       } else {

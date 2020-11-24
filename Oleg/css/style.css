@@ -318,11 +318,6 @@ body {
   margin-right: 10px;
 }
 
-/* .container {
-	min-width: 700px;
-	width: 100%;
-} */
-
 .gallery_photos {
   display: flex;
   flex-wrap: wrap;
