@@ -101,45 +101,137 @@ $(document).ready(function () {
 
   /*============== PopUp ====================*/
   /*Row 1*/
-  $("#popup_1").hide();
-  $("#photo_1").on("click", function () {
-    $("#popup_1").show();
-  });
+    /*photo_1*/
+    $("#photo_1").on(
+      "click",
+      function () {
+        $("#popup_1").css({
+          display: "flex",
+        });
+      }
+    );
 
-  $("#popup_2").hide();
-  $("#photo_2").on("click", function () {
-    $("#popup_2").show();
-  });
+    $(document).mouseup(function (e) {
+      var container = $("#popup_1");
+      if (container.has(e.target).length === 0) {
+        container.hide();
+      }
+      $("#popup_1").css({
+        display: "none",
+      });
+    });
 
-  $("#popup_3").hide();
-  $("#photo_3").on("click", function () {
-    $("#popup_3").show();
-  });
+    /*photo_2*/
+    $("#photo_2").on(
+      "click",
+      function () {
+        $("#popup_2").css({
+          display: "flex",
+        });
+      }
+    );
+
+    $(document).mouseup(function (e) {
+      var container = $("#popup_2");
+      if (container.has(e.target).length === 0) {
+        container.hide();
+      }
+      $("#popup_2").css({
+        display: "none",
+      });
+    });
+
+    /*photo_3*/
+    $("#photo_3").on(
+      "click",
+      function () {
+        $("#popup_3").css({
+          display: "flex",
+        });
+      }
+    );
+    
+    $(document).mouseup(function (e) {
+      var container = $("#popup_3");
+      if (container.has(e.target).length === 0) {
+        container.hide();
+      }
+      $("#popup_3").css({
+        display: "none",
+      });
+    });
+
 
   $("#photo_1, #photo_2, #photo_3").on("click", function () {
     $(".button_profile-menu").hide();
   });
 
   /*Row 2*/
-  $("#popup_4").hide();
-  $("#photo_4").on("click", function () {
-    $("#popup_4").show();
-  });
+    /*photo_4*/
+    $("#photo_4").on(
+      "click",
+      function () {
+        $("#popup_4").css({
+          display: "flex",
+        });
+      }
+    );
+    
+    $(document).mouseup(function (e) {
+      var container = $("#popup_4");
+      if (container.has(e.target).length === 0) {
+        container.hide();
+      }
+      $("#popup_4").css({
+        display: "none",
+      });
+    });
 
-  $("#popup_5").hide();
-  $("#photo_5").on("click", function () {
-    $("#popup_5").show();
-  });
+    /*photo_5*/
+    $("#photo_5").on(
+      "click",
+      function () {
+        $("#popup_5").css({
+          display: "flex",
+        });
+      }
+    );
+    
+    $(document).mouseup(function (e) {
+      var container = $("#popup_5");
+      if (container.has(e.target).length === 0) {
+        container.hide();
+      }
+      $("#popup_5").css({
+        display: "none",
+      });
+    });
 
-  $("#popup_6").hide();
-  $("#photo_6").on("click", function () {
-    $("#popup_6").show();
-  });
+    /*photo_6*/
+    $("#photo_6").on(
+      "click",
+      function () {
+        $("#popup_6").css({
+          display: "flex",
+        });
+      }
+    );
+    
+    $(document).mouseup(function (e) {
+      var container = $("#popup_6");
+      if (container.has(e.target).length === 0) {
+        container.hide();
+      }
+      $("#popup_6").css({
+        display: "none",
+      });
+    });
 
   $("#photo_4, #photo_5, #photo_6").on("click", function () {
     $(".button_profile-menu").hide();
   });
 
+  
   /*Убираем скролл всего сайта при клике на pop up*/
   $("#photo_1, #photo_2, #photo_3, #photo_4, #photo_5, #photo_6").on(
     "click",
