@@ -1,31 +1,38 @@
 $(document).ready(function () {
-  let container = document.querySelector("#modal_container"),
-    body = document.querySelector("body"),
-    gallery = document.querySelector(".gallery_photos"),
-    taggs = document.querySelector("#taggs"),
-    moreModal = document.querySelector("#modal_view-more"),
-    modalImg = document.querySelector("#gallery_item_view"),
+  let container = $(".modal_container"),
+    body = document.getElementById("body"),
+    gallery = $(".gallery_photos"),
+    taggs = $("#taggs"),
+    moreModal = $(".modal_view-more"),
+    modalImg = $(".view_modal_img"),
     viewBtn = $(".gallery_view"),
     msgCounter = +$(".msg_counter").attr("data-counter"),
     togglePosts = $("#togglePosts"),
-    name = $(".name");
-  toggleTagged = $("#toggleTagged");
+    name = $(".name"),
+    nameDescr = $(".name_descr"),
+    toggleTagged = $("#toggleTagged");
 
-  moreModal.style = "display: none !important";
-  modalImg.style = "display: none !important";
+  container.hide();
+  moreModal.hide();
+  modalImg.hide();
+  taggs.hide();
 
   $(".gallery_item").click(function () {
     modalImg.style = "display: block";
     let imgAddr = $(this).attr("src");
-    $("#gallery_item_view").attr({ src: imgAddr });
-    container.style = "display: flex";
+    modalImg.attr({ src: imgAddr });
     body.style = "overflow-y: hidden";
+    container.show();
+    modalImg.show();
+    moreModal.hide();
   });
 
-  $("#modal_container").click(function () {
-    this.style = "display: none";
+  container.click(function () {
     body.style = "overflow-y: auto";
     moreModal.style = "display: none !important";
+    modalImg.hide();
+    moreModal.hide();
+    container.hide();
   });
 
   $(".follow").click(function () {
@@ -72,29 +79,45 @@ $(document).ready(function () {
   });
 
   $(".more_arrow").click(function () {
-    modalImg.style = "display: none";
-    container.style = "display: flex";
+    modalImg.hide();
+    container.show();
+    moreModal.show();
     body.style = "overflow-y: hidden";
     moreModal.style = "display: block";
   });
 
   togglePosts.click(function () {
-    gallery.style = "display: flex";
-    taggs.style = "display: none";
+    gallery.show();
+    taggs.hide();
   });
 
   toggleTagged.click(function () {
-    gallery.style = "display: none";
-    taggs.style = "display: block";
+    gallery.hide();
+    taggs.show();
   });
 
   name.click(function () {
     let changeName = prompt("Введите новый ник: ", "");
+    let access = false;
 
-    while (changeName == "" || changeName.length > 10) {
-      changeName = prompt("Введите новый ник: ", "");
+    function finishPrompt() {
+      if (access == true) {
+        name.text(changeName);
+        nameDescr.text(changeName);
+      } else {
+        checkPrompt();
+      }
     }
 
-    name.text(changeName);
+    function checkPrompt() {
+      if (changeName == "" || changeName.length > 10) {
+        access = false;
+        finishPrompt();
+      } else {
+        access = true;
+        finishPrompt();
+      }
+    }
+    finishPrompt();
   });
 });
