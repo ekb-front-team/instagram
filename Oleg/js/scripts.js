@@ -1,6 +1,6 @@
 $(document).ready(function () {
   let container = $(".modal_container"),
-    body = document.getElementById("body"),
+    body = $("body"),
     gallery = $(".gallery_photos"),
     taggs = $("#taggs"),
     moreModal = $(".modal_view-more"),
@@ -16,19 +16,20 @@ $(document).ready(function () {
   moreModal.hide();
   modalImg.hide();
   taggs.hide();
+  console.info(body);
 
   $(".gallery_item").click(function () {
-    modalImg.style = "display: block";
     let imgAddr = $(this).attr("src");
     modalImg.attr({ src: imgAddr });
-    body.style = "overflow-y: hidden";
+    modalImg.style = "display: block";
+    body.css("overflow", "hidden");
     container.show();
     modalImg.show();
     moreModal.hide();
   });
 
   container.click(function () {
-    body.style = "overflow-y: auto";
+    body.css("overflow", "auto");
     moreModal.style = "display: none !important";
     modalImg.hide();
     moreModal.hide();
@@ -82,7 +83,7 @@ $(document).ready(function () {
     modalImg.hide();
     container.show();
     moreModal.show();
-    body.style = "overflow-y: hidden";
+    body.css("overflow", "hidden");
     moreModal.style = "display: block";
   });
 
