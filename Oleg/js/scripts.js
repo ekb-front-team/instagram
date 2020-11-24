@@ -97,28 +97,28 @@ $(document).ready(function () {
     taggs.show();
   });
 
-  name.click(function () {
-    let changeName = prompt("Введите новый ник: ", "");
-    let access = false;
+  // name.click(function () {
+  //   let changeName = prompt("Введите новый ник: ", "");
+  //   if (changeName !== "" && changeName.length < 10) {
+  //     name.text(changeName);
+  //     nameDescr.text(changeName);
+  //   } else {
+  //     changeName = prompt("Введите новый ник: ", "");
+  //   }
+  // });
 
-    function finishPrompt() {
-      if (access == true) {
+  name.click(function () {
+    let changeName = "";
+    checkPrompt();
+
+    function checkPrompt() {
+      if (changeName !== null && changeName.length < 10 && changeName !== "") {
         name.text(changeName);
         nameDescr.text(changeName);
       } else {
+        changeName = prompt("Введите новый ник: ", "name");
         checkPrompt();
       }
     }
-
-    function checkPrompt() {
-      if (changeName == "" || changeName.length > 10) {
-        access = false;
-        finishPrompt();
-      } else {
-        access = true;
-        finishPrompt();
-      }
-    }
-    finishPrompt();
   });
 });
