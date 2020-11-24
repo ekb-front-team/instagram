@@ -1,10 +1,11 @@
 $(document).ready(function () {
   /*============== Button_profile-menu ==================*/
 
-  $(".button_profile-menu").hide();
-
   $("#header_button-profile").on("click", function () {
     $(".button_profile-menu").slideToggle();
+    $(".button_profile-menu").css({
+      display: "block",
+    });
   });
 
   $(document).mouseup(function (e) {
@@ -20,9 +21,11 @@ $(document).ready(function () {
 
   /*============== Mobile_menu-aside ====================*/
 
-  $(".mobile_menu-aside").hide();
   $(".header_aside-btn_arrow").on("click", function () {
     $(".mobile_menu-aside").slideToggle();
+    $(".mobile_menu-aside").css({
+      display: "block",
+    });
   });
 
   $("#btn_line-aside").on("click", function () {
@@ -44,9 +47,11 @@ $(document).ready(function () {
 
   /*============== Mobile_menu-plus ====================*/
 
-  $(".mobile_menu-plus").hide();
   $(".header-btn_plus").on("click", function () {
     $(".mobile_menu-plus").slideToggle();
+    $(".mobile_menu-plus").css({
+      display: "block",
+    });
   });
 
   $("#btn_line-plus").on("click", function () {
@@ -69,9 +74,11 @@ $(document).ready(function () {
 
   /*============== Mobile_menu-burg ====================*/
 
-  $(".mobile_menu-burg").hide();
   $(".header-burg").on("click", function () {
     $(".mobile_menu-burg").slideToggle();
+    $(".mobile_menu-burg").css({
+      display: "block",
+    });
   });
 
   $("#btn_line-burg").on("click", function () {
@@ -231,7 +238,7 @@ $(document).ready(function () {
     $(".button_profile-menu").hide();
   });
 
-  
+
   /*Убираем скролл всего сайта при клике на pop up*/
   $("#photo_1, #photo_2, #photo_3, #photo_4, #photo_5, #photo_6").on(
     "click",

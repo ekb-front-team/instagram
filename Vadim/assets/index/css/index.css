@@ -601,7 +601,6 @@ main {
 /*pop_up*/
 
 .popup {
-    display: none;
     justify-content: center;
     align-items: center;
     top: 0;
