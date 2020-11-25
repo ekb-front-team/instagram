@@ -14,10 +14,6 @@
     cursor: pointer;
 }
 
-.white {
-    background: #fff;
-}
-
 .hide {
     display: none;
 }
@@ -42,6 +38,7 @@
 
 
 .header {
+    background: #fff;
     z-index: 999;
     position: fixed;
     left: 50%;
@@ -58,6 +55,7 @@
 }
 
 .header-aside {
+    font-weight: 700;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -72,6 +70,7 @@
 }
 
 .header_aside-btn_arrow {
+    color: #262626;
     background: none;
     position: absolute;
     right: -35%;
@@ -142,6 +141,7 @@
 }
 
 .button_profile-menu {
+    background: #fff;
     z-index: 999;
     position: fixed;
     width: 207px;
@@ -152,6 +152,7 @@
 }
 
 .profile_menu-rhombus {
+    background: #fff;
     position: absolute;
     width: 15px;
     height: 15px;
@@ -225,6 +226,7 @@
 }
 
 .mobile_menu-aside {
+    background: #fff;
     z-index: 999;
     position: fixed;
     left: 50%;
@@ -276,6 +278,10 @@
 }
 
 .menu_aside_bar-btn {
+    font-weight: 700;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    background: #fff;
     font-size: 12px;
     width: 100%;
     height: 30px;
@@ -286,6 +292,9 @@
 }
 
 .mobile_menu_aside-btn_account {
+    border: none;
+    color: #262626;
+    font-weight: 700;
     justify-content: flex-start;
     width: 100%;
     padding: 0 30px 0 30px;
@@ -303,6 +312,7 @@
 }
 
 .mobile_menu-plus {
+    background: #fff;
     z-index: 999;
     position: fixed;
     left: 50%;
@@ -323,6 +333,7 @@
 }
 
 .mobile_menu-burg {
+    background: #fff;
     z-index: 999;
     position: fixed;
     left: 50%;
@@ -436,6 +447,7 @@ main {
 }
 
 .description_title-btn-edit {
+    font-weight: 700;
     width: 110px;
     height: 28px;
     font-size: 13px;
@@ -454,6 +466,7 @@ main {
 }
 
 .description_title-btn-ellipsis {
+    color: #262626;
     margin: 0 0 0 16px;
     font-size: 18px;
 }
@@ -479,6 +492,7 @@ main {
 }
 
 .main_top_description-subtitle {
+    font-weight: 700;
     font-size: 15px;
 }
 
@@ -511,6 +525,11 @@ main {
 }
 
 .main_aside-description-btn {
+    color: #262626;
+    font-weight: 700;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    background: #fff;
     margin: 15px 0 0 0;
     width: 100%;
     max-width: 540px;
@@ -531,6 +550,7 @@ main {
 }
 
 .main_aside_storys-item {
+    font-weight: 700;
     font-size: 12px;
     display: flex;
     align-items: center;
@@ -578,6 +598,7 @@ main {
 }
 
 .main_center_control-btn {
+    font-weight: 700;
     background: none;
     font-size: 12px;
     display: flex;
