@@ -14,32 +14,12 @@
     cursor: pointer;
 }
 
-.padding {
-    padding: 0 20px 0 20px;
-}
-
-.fixed {
-    position: fixed;
-}
-
 .white {
     background: #fff;
 }
 
-.z-index {
-    z-index: 999;
-}
-
-.relative {
-    position: relative;
-}
-
 .hide {
     display: none;
-}
-
-.absolute {
-    position: absolute;
 }
 
 .bold {
@@ -54,18 +34,6 @@
     border: none;
 }
 
-.fsz12px {
-    font-size: 12px;
-}
-
-.fsz15px {
-    font-size: 15px;
-}
-
-.bgrnd-hide {
-    background: none;
-}
-
 .border-inst {
     border: 1px solid #DBDBDB;
     border-radius: 3px;
@@ -74,6 +42,8 @@
 
 
 .header {
+    z-index: 999;
+    position: fixed;
     left: 50%;
     transform: translate(-50%, -0%);
     height: 53px;
@@ -88,19 +58,28 @@
 }
 
 .header-aside {
+    position: relative;
     justify-content: center;
     align-items: center;
     font-size: 19px;
 }
 
 .header_aside-icon_protection {
+    font-size: 12px;
+    position: absolute;
     left: -30%;
     bottom: 3px;
 }
 
 .header_aside-btn_arrow {
+    background: none;
+    position: absolute;
     right: -35%;
     top: 26%;
+}
+
+.header-bar {
+    position: relative;
 }
 
 .header-search {
@@ -117,16 +96,27 @@
   }
 
 .header-search-icon {
+    background: none;
+    position: absolute;
     top: 50%;
     left: 4%;
     transform: translate(-5%, -50%);
 }
 
 .header-buttons {
+    position: relative;
     justify-content: space-between;
     max-width: 198px;
     height: 22px;
 } 
+
+.header-buttons button {
+    background: none;
+}
+
+.header-button {
+    position: relative;
+}
 
 .link-circle_icon {
     height: 22px;
@@ -140,6 +130,7 @@
 }
 
 .header_button-notification {
+    position: absolute;
     width: 22px;
     height: 22px;
     color: #fff;
@@ -151,6 +142,8 @@
 }
 
 .button_profile-menu {
+    z-index: 999;
+    position: fixed;
     width: 207px;
     height: 210px;
     top: 50px;
@@ -159,6 +152,7 @@
 }
 
 .profile_menu-rhombus {
+    position: absolute;
     width: 15px;
     height: 15px;
     right: 9%;
@@ -169,6 +163,7 @@
 }
 
 .profile_menu-list {
+    font-size: 13px;
     color: #545454;
 }
 
@@ -196,6 +191,8 @@
 } 
 
 .header-btn_plus {
+    background: none;
+    position: absolute;
     top: 50%;
     left: 5%;
     transform: translate(-0%, -50%);
@@ -213,6 +210,8 @@
 }
 
 .header-burg {
+    background: none;
+    position: absolute;
     top: 50%;
     right: 5%;
     transform: translate(-0%, -50%);
@@ -226,6 +225,8 @@
 }
 
 .mobile_menu-aside {
+    z-index: 999;
+    position: fixed;
     left: 50%;
     bottom: 0;
     transform: translate(-50%, -0%);
@@ -275,6 +276,7 @@
 }
 
 .menu_aside_bar-btn {
+    font-size: 12px;
     width: 100%;
     height: 30px;
 }
@@ -301,6 +303,8 @@
 }
 
 .mobile_menu-plus {
+    z-index: 999;
+    position: fixed;
     left: 50%;
     bottom: 0;
     transform: translate(-50%, -0%);
@@ -319,6 +323,8 @@
 }
 
 .mobile_menu-burg {
+    z-index: 999;
+    position: fixed;
     left: 50%;
     bottom: 0;
     transform: translate(-50%, -0%);
@@ -380,6 +386,7 @@ main {
 }
 
 .main-top {
+    padding: 0 20px 0 20px;
     width: 100%;
     display: flex;
 }
@@ -390,6 +397,7 @@ main {
 }
 
 .main_top_avatar-img {
+    position: relative;
     width: 100%;
     max-width: 152px;
     height: 152px;
@@ -400,6 +408,7 @@ main {
 }
 
 .top_avatar_img-btn {
+    position: absolute;
     top: 103px;
     right: 0px;
     width: 30px;
@@ -455,6 +464,7 @@ main {
 }
 
 .description_statistics-item {
+    font-size: 15px;
     display: flex;
     align-items: flex-end;
     margin: 0 39px 0 0;
@@ -468,17 +478,25 @@ main {
     font-size: 13px;
 }
 
+.main_top_description-subtitle {
+    font-size: 15px;
+}
+
 .main_top_description-p {
+    font-size: 15px;
     width: 100%;
     line-height: 23px;
 }
 
 .main_top_description-link {
+    font-size: 15px;
     color: #133768;
     line-height: 23px;
 }
 
 .main_aside-description {
+    padding: 0 20px 0 20px;
+    font-size: 12px;
     width: 100%;
     text-align: left;
 }
@@ -513,6 +531,7 @@ main {
 }
 
 .main_aside_storys-item {
+    font-size: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -559,6 +578,8 @@ main {
 }
 
 .main_center_control-btn {
+    background: none;
+    font-size: 12px;
     display: flex;
     padding: 20px 0;
     margin: -1px 0 0 0;

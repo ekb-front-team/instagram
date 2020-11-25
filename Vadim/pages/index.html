@@ -25,42 +25,42 @@
   </head>
 
   <body>
-    <header class="header flex fixed white z-index">
+    <header class="header flex white">
       <div class="header-wrapper flex">
         <img class="header-lable" src="../assets/index/img/logo.png"></img>
-        <div class="header-aside montserrat relative hide bold black-inst">
-          <div class="header_aside-icon_protection absolute black-inst fsz12px"><i class="fas fa-lock"></i></div>
+        <div class="header-aside montserrat hide bold black-inst">
+          <div class="header_aside-icon_protection black-inst"><i class="fas fa-lock"></i></div>
           <h1>Name</h1>
-          <button class="header_aside-btn_arrow pointer absolute black-inst border-hide bgrnd-hide"><i class="fas fa-angle-down"></i></button>
+          <button class="header_aside-btn_arrow pointer black-inst border-hide"><i class="fas fa-angle-down"></i></button>
         </div>
-        <div class="header-bar relative">
+        <div class="header-bar">
           <input class="header-search flex montserrat border-inst" placeholder="Search"></input>
-          <button class="header-search-icon pointer absolute border-hide bgrnd-hide"><img src="../assets/index/img/icon/search_icon.png" alt="search"></a>
+          <button class="header-search-icon pointer border-hide"><img src="../assets/index/img/icon/search_icon.png" alt="search"></a>
         </div>  
         <!-- header-buttons -->
-        <div class="header-buttons flex relative">
-          <button class="pointer border-hide bgrnd-hide">
-            <img src="../assets/index/img/icon/house_icon.png" alt="">
+        <div class="header-buttons flex">
+          <button class="pointer border-hide">
+            <img src="../assets/index/img/icon/house_icon.png" alt="house_icon">
           </button>
-          <button class="header-button pointer relative border-hide bgrnd-hide">
-            <img src="../assets/index/img/icon/plane_icon.png" alt="">
-            <div class="header_button-notification flex montserrat absolute">
+          <button class="header-button pointer border-hide">
+            <img src="../assets/index/img/icon/plane_icon.png" alt="plane_icon">
+            <div class="header_button-notification flex montserrat">
               <p>5</p>
             </div>
           </button>
-          <button class="pointer border-hide bgrnd-hide">
-            <img src="../assets/index/img/icon/compass_icon.png" alt="">
+          <button class="pointer border-hide">
+            <img src="../assets/index/img/icon/compass_icon.png" alt="compass_icon">
           </button>
-          <button class="pointer border-hide bgrnd-hide">
-            <img src="../assets/index/img/icon/heart_icon.png" alt="">
+          <button class="pointer border-hide">
+            <img src="../assets/index/img/icon/heart_icon.png" alt="heart_icon">
           </button>
-          <button id="header_button-profile" class="pointer border-hide bgrnd-hide">
+          <button id="header_button-profile" class="pointer border-hide">
             <div class="link-circle_icon"></div>
           </button>
           <!-- button_profile-menu -->
-          <div class="button_profile-menu fixed white z-index hide">
-            <div class="profile_menu-rhombus white absolute"></div>
-            <ul class="profile_menu-list montserrat bold fsz12px">
+          <div class="button_profile-menu white hide">
+            <div class="profile_menu-rhombus white"></div>
+            <ul class="profile_menu-list montserrat bold">
               <li class="profile_menu_list-item pointer">
                 <i class="far fa-user-circle"></i>
                 <p>Profile</p></li>
@@ -71,13 +71,13 @@
             </ul>
           </div>
         </div>
-        <button class="header-btn_plus pointer hide absolute border-hide bgrnd-hide">
+        <button class="header-btn_plus pointer hide border-hide">
           <ul>
             <li class="header_btn_plus-line"></li>
             <li class="header_btn_plus-line"></li>
           </ul>
         </button>
-        <button class="header-burg pointer hide absolute border-hide bgrnd-hide">
+        <button class="header-burg pointer hide border-hide">
           <ul>
             <li class="header_burg-line"></li>
             <li class="header_burg-line"></li>
@@ -87,7 +87,7 @@
        </div> 
     </header>
     <!-- mobile_menu-aside -->
-      <div class="mobile_menu-aside fixed white z-index hide">
+      <div class="mobile_menu-aside white hide">
         <button class="mobile_menu-btn_line pointer border-hide" id="btn_line-aside"></button>
         <div class="menu_aside-profile flex">
           <div class="menu_aside_profile-item montserrat flex bold">
@@ -97,8 +97,8 @@
           <div class="menu_aside_profile-icon flex"><i class="fas fa-check"></i></div>
         </div>
         <div class="mobile_menu_aside-bar flex">
-          <button class="menu_aside_bar-btn pointer montserrat white bold black-inst fsz12px border-inst">367 followers</button>
-          <button class="menu_aside_bar-btn pointer montserrat white bold black-inst fsz12px border-inst">Add close friends</button>
+          <button class="menu_aside_bar-btn pointer montserrat white bold black-inst border-inst">367 followers</button>
+          <button class="menu_aside_bar-btn pointer montserrat white bold black-inst border-inst">Add close friends</button>
         </div>
         <button class="mobile_menu_aside-btn_account montserrat flex pointer bold black-inst border-hide">
           <ul>
@@ -109,7 +109,7 @@
         </button>
       </div>
     <!-- mobile_menu-plus -->
-    <div class="mobile_menu-plus fixed white z-index hide">
+    <div class="mobile_menu-plus white hide">
       <button class="mobile_menu-btn_line pointer border-hide" id="btn_line-plus"></button>
       <p class="mobile_menu_plus-title montserrat bold">Create</p>
       <ul class="mobile_menu-list">
@@ -120,7 +120,7 @@
       </ul>
     </div>
     <!-- mobile_menu-burg -->
-    <div class="mobile_menu-burg fixed white z-index hide">
+    <div class="mobile_menu-burg white hide">
       <button class="mobile_menu-btn_line pointer border-hide" id="btn_line-burg"></button>
       <ul class="mobile_menu-list">
         <li class="mobile_menu-item montserrat pointer"><i class="fas fa-cog"></i><p>Settings</p></li>
@@ -133,10 +133,10 @@
       </ul>
     </div>
     <main>
-      <div class="main-top padding">
+      <div class="main-top">
         <div class="main_top-avatar flex">
-          <div class="main_top_avatar-img relative">
-            <button class="top_avatar_img-btn pointer hide absolute">
+          <div class="main_top_avatar-img">
+            <button class="top_avatar_img-btn pointer hide">
               <i class="fas fa-plus"></i>
             </button>
           </div>
@@ -149,22 +149,22 @@
             <i class="description_title-btn-ellipsis fas fa-ellipsis-h black-inst pointer"></i>
           </div>
           <div class="main_top_description-statistics flex">
-            <div class="description_statistics-item montserrat black-inst fsz15px">
+            <div class="description_statistics-item montserrat black-inst">
               <span class="bold">79</span><p>posts</p>
             </div>
-            <div class="description_statistics-item montserrat black-inst fsz15px">
+            <div class="description_statistics-item montserrat black-inst">
               <span class="bold">279</span><p>followers</p>
             </div>
-            <div class="description_statistics-item montserrat black-inst fsz15px">
+            <div class="description_statistics-item montserrat black-inst">
               <span class="bold">179</span><p>following</p>
             </div>
           </div>
-          <h3 class="main_top_description-subtitle montserrat bold black-inst fsz15px">Name</h3>
-          <p class="main_top_description-p montserrat black-inst fsz15px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-          <a href="#" class="main_top_description-link montserrat fsz15px">bit.ly/35Ce3mX</a>
+          <h3 class="main_top_description-subtitle montserrat bold black-inst">Name</h3>
+          <p class="main_top_description-p montserrat black-inst">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+          <a href="#" class="main_top_description-link montserrat">bit.ly/35Ce3mX</a>
         </div>
       </div>
-      <div class="main_aside-description montserrat padding hide black-inst fsz12px">
+      <div class="main_aside-description montserrat hide black-inst">
         <h3 class="main_aside-description-subtitle bold">Name</h3>
         <p class="main_aside-description-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         <a href="#">bit.ly/35Ce3mX</a>
@@ -173,19 +173,19 @@
       <!-- main_aside-storys -->
       <div class="main_aside-storys">
         <div class="main_aside_storys-slider">
-          <div class="main_aside_storys-item montserrat pointer bold black-inst fsz12px">
+          <div class="main_aside_storys-item montserrat pointer bold black-inst">
             <div class="aside_storys_item-circle border-inst flex">
               <div class="aside_storys_item_circle-img"></div>
             </div>
             <p>Name</p>
           </div>
-          <div class="main_aside_storys-item montserrat pointer bold black-inst fsz12px">
+          <div class="main_aside_storys-item montserrat pointer bold black-inst">
             <div class="aside_storys_item-circle border-inst flex">
               <div class="aside_storys_item_circle-img"></div>
             </div>
             <p>Name</p>
           </div>
-          <div class="main_aside_storys-item montserrat pointer bold black-inst fsz12px">
+          <div class="main_aside_storys-item montserrat pointer bold black-inst">
             <div class="aside_storys_item-circle border-inst flex">
               <div class="aside_storys_item_circle-img"></div>
             </div>
@@ -193,19 +193,19 @@
           </div>
         </div>
         <div class="main_aside_storys-slider">
-          <div class="main_aside_storys-item montserrat pointer bold black-inst fsz12px">
+          <div class="main_aside_storys-item montserrat pointer bold black-inst">
             <div class="aside_storys_item-circle border-inst flex">
               <div class="aside_storys_item_circle-img"></div>
             </div>
             <p>Name</p>
           </div>
-          <div class="main_aside_storys-item montserrat pointer bold black-inst fsz12px">
+          <div class="main_aside_storys-item montserrat pointer bold black-inst">
             <div class="aside_storys_item-circle border-inst flex">
               <div class="aside_storys_item_circle-img"></div>
             </div>
             <p>Name</p>
           </div>
-          <div class="main_aside_storys-item montserrat pointer bold black-inst fsz12px">
+          <div class="main_aside_storys-item montserrat pointer bold black-inst">
             <div class="aside_storys_item-circle border-inst flex">
               <div class="aside_storys_item_circle-img"></div>
             </div>
@@ -214,8 +214,8 @@
         </div>
       </div>
       <div class="main_center-control flex">
-        <button class="main_center_control-btn pointer bold border-hide fsz12px bgrnd-hide"><i class="fas fa-border-all"></i><p>Posts</p></button>
-        <button class="main_center_control-btn pointer bold border-hide fsz12px bgrnd-hide"><i class="fas fa-user-check"></i><p>Tagged</p></button>
+        <button class="main_center_control-btn pointer bold border-hide"><i class="fas fa-border-all"></i><p>Posts</p></button>
+        <button class="main_center_control-btn pointer bold border-hide"><i class="fas fa-user-check"></i><p>Tagged</p></button>
       </div>
       <div class="main-content">
         <div id="photo_1" data-path="photo_content_1" class="main_content_bar-wrapper pointer btn">
