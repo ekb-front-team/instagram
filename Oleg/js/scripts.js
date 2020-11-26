@@ -123,13 +123,17 @@ $(document).ready(function () {
     }
   });
 
+  function random() {
+    return Math.floor(Math.random() * 100) + 1;
+  }
+
   addBtn.click(function () {
     let newWrp = $('<div class="photo_wrp"></div>');
     let newImg = $('<img class="gallery_item" alt="new photo">');
 
     $.ajax("https://picsum.photos/v2/list?page=2&limit=100", {
       success: function (data) {
-        let src = data[Math.floor(Math.random() * 100) + 1].download_url;
+        let src = data[random()].download_url;
         $(".photo_wrp:first-child").after(newWrp);
         newWrp.append(newImg);
         newImg.attr("src", src + ".jpg");

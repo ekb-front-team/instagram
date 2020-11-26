@@ -16,10 +16,11 @@ body {
 /*header*/
 .header {
   border-bottom: 1px solid #dbdbdb;
-  /* position: fixed;
+  position: fixed;
   background-color: #fff;
   width: 100%;
-  z-index: 9999999; */
+  z-index: 9999999;
+  padding: 0;
 }
 
 .header_wrapper {
@@ -28,6 +29,7 @@ body {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  margin: 0 20px;
 }
 
 .header_search_input {
@@ -108,9 +110,9 @@ body {
 /*main*/
 /*user-profile*/
 
-/* .main {
+.main {
   padding-top: 53px;
-} */
+}
 
 .user_profile_wrapper {
   display: flex;
@@ -373,7 +375,7 @@ body {
   height: 100%;
   background: rgba(57, 57, 57, 0.7);
   position: fixed;
-  z-index: 99999;
+  z-index: 9999999;
   left: 0;
   top: 0;
   justify-content: center;
@@ -398,10 +400,6 @@ body {
 /*modal-view-end*/
 
 /*adaptive*/
-
-.header {
-  padding: 0 20px 0 20px;
-}
 
 .add_photo {
   height: 295px;
