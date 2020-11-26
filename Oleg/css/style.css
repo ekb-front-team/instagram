@@ -394,6 +394,30 @@ body {
 .header {
   padding: 0 20px 0 20px;
 }
+
+.add_photo {
+  height: 295px;
+  width: 100%;
+  max-width: 295px;
+  background: url(../images/plus.png) center center no-repeat;
+  background-size: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.add_photo:active {
+  transform: scale(0.8);
+}
+
+@media (max-width: 5000px) {
+  .gallery_item,
+  .add_photo {
+    height: 295px;
+  }
+}
+
 @media (max-width: 830px) {
   .user_profile_wrapper {
     flex-direction: column;
@@ -417,13 +441,15 @@ body {
   .stories_item:last-child {
     margin: 0 10px 20px 10px;
   }
-  .gallery_item {
+  .gallery_item,
+  .add_photo {
     height: 250px;
   }
 }
 
 @media (max-width: 680px) {
-  .gallery_item {
+  .gallery_item,
+  .add_photo {
     height: 200px;
   }
 
@@ -437,13 +463,15 @@ body {
 }
 
 @media (max-width: 560px) {
-  .gallery_item {
+  .gallery_item,
+  .add_photo {
     height: 150px;
   }
 }
 
 @media (max-width: 420px) {
-  .gallery_item {
+  .gallery_item,
+  .add_photo {
     height: 130px;
   }
   body,
