@@ -11,6 +11,7 @@ $(document).ready(function () {
     name = $(".name"),
     nameDescr = $(".name_descr"),
     addBtn = $(".add_photo"),
+    //imageView = $(".gallery_item"),
     toggleTagged = $("#toggleTagged");
 
   container.hide();
@@ -18,9 +19,19 @@ $(document).ready(function () {
   modalImg.hide();
   taggs.hide();
 
-  $(".gallery_item").click(function () {
+  // imageView.click(function () {
+  //   let imgAddr = $(this).attr("src");
+  //   modalImg.attr("src", imgAddr);
+  //   modalImg.style = "display: block";
+  //   body.css("overflow", "hidden");
+  //   container.show();
+  //   modalImg.show();
+  //   moreModal.hide();
+  // });
+
+  $(".gallery_photos").on("click", ".gallery_item", function () {
     let imgAddr = $(this).attr("src");
-    modalImg.attr({ src: imgAddr });
+    modalImg.attr("src", imgAddr);
     modalImg.style = "display: block";
     body.css("overflow", "hidden");
     container.show();
@@ -118,10 +129,10 @@ $(document).ready(function () {
 
     $.ajax("https://picsum.photos/v2/list?page=2&limit=100", {
       success: function (data) {
-        let a = data[Math.floor(Math.random() * 100) + 1].download_url;
+        let src = data[Math.floor(Math.random() * 100) + 1].download_url;
         $(".photo_wrp:first-child").after(newWrp);
         newWrp.append(newImg);
-        newImg.attr("src", a);
+        newImg.attr("src", src + ".jpg");
       },
     });
   });
