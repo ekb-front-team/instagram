@@ -103,7 +103,7 @@ $(document).ready(function () {
     checkPrompt();
 
     function checkPrompt() {
-      if (changeName && changeName.length < 10) {
+      if (changeName) {
         name.text(changeName);
         nameDescr.text(changeName);
       } else {
@@ -113,20 +113,29 @@ $(document).ready(function () {
     }
   });
 
-  function random() {
-    return Math.floor(Math.random() * 100) + 1;
+  function random(min, max) {
+    return Math.floor(min + Math.random() * (max - min));
   }
 
   addPhotoBtn.click(function () {
     const newWrp = $('<div class="photo_wrp"></div>');
     const newImg = $('<img class="gallery_item" alt="new photo">');
+    const loader = $(
+      '<div id="cube-loader"><div class="caption"><div class="cube-loader"><div class="cube loader-1"></div><div class="cube loader-2"></div><div class="cube loader-4"></div><div class="cube loader-3"></div></div></div></div>'
+    );
 
     $.ajax("https://picsum.photos/v2/list?page=2&limit=100", {
       success: function (data) {
-        const src = data[random()].download_url;
+        const src = data[random(1, 100)].download_url;
         $(".photo_wrp:first-child").after(newWrp);
-        newWrp.append(newImg);
+        newWrp.append(loader);
         newImg.attr("src", src + ".jpg");
+      },
+      complete: function () {
+        setTimeout(() => {
+          loader.remove();
+          newWrp.append(newImg);
+        }, 2000);
       },
     });
   });
