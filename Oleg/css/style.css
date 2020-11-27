@@ -19,7 +19,7 @@ body {
   position: fixed;
   background-color: #fff;
   width: 100%;
-  z-index: 9999999;
+  z-index: 800;
   padding: 0;
 }
 

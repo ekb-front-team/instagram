@@ -10,7 +10,7 @@ $(document).ready(function () {
     togglePosts = $("#togglePosts"),
     name = $(".name"),
     nameDescr = $(".name_descr"),
-    addBtn = $(".add_photo"),
+    addPhotoBtn = $(".add_photo"),
     //imageView = $(".gallery_item"),
     toggleTagged = $("#toggleTagged");
 
@@ -18,16 +18,6 @@ $(document).ready(function () {
   moreModal.hide();
   modalImg.hide();
   taggs.hide();
-
-  // imageView.click(function () {
-  //   let imgAddr = $(this).attr("src");
-  //   modalImg.attr("src", imgAddr);
-  //   modalImg.style = "display: block";
-  //   body.css("overflow", "hidden");
-  //   container.show();
-  //   modalImg.show();
-  //   moreModal.hide();
-  // });
 
   $(".gallery_photos").on("click", ".gallery_item", function () {
     let imgAddr = $(this).attr("src");
@@ -127,13 +117,13 @@ $(document).ready(function () {
     return Math.floor(Math.random() * 100) + 1;
   }
 
-  addBtn.click(function () {
-    let newWrp = $('<div class="photo_wrp"></div>');
-    let newImg = $('<img class="gallery_item" alt="new photo">');
+  addPhotoBtn.click(function () {
+    const newWrp = $('<div class="photo_wrp"></div>');
+    const newImg = $('<img class="gallery_item" alt="new photo">');
 
     $.ajax("https://picsum.photos/v2/list?page=2&limit=100", {
       success: function (data) {
-        let src = data[random()].download_url;
+        const src = data[random()].download_url;
         $(".photo_wrp:first-child").after(newWrp);
         newWrp.append(newImg);
         newImg.attr("src", src + ".jpg");
