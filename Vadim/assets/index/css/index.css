@@ -6,14 +6,6 @@
     align-items: center;
 }
 
-.montserrat {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.pointer {
-    cursor: pointer;
-}
-
 .hide {
     display: none;
 }
@@ -36,6 +28,13 @@
 }
 /*==================================*/
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
 
 .header {
     background: #fff;
@@ -97,9 +96,8 @@
 .header-search-icon {
     background: none;
     position: absolute;
-    top: 50%;
-    left: 4%;
-    transform: translate(-5%, -50%);
+    top: 25%;
+    left: 3%;
 }
 
 .header-buttons {
@@ -169,6 +167,7 @@
 }
 
 .profile_menu_list-item {
+    cursor: pointer;
     display: flex;
     align-items: center;
     padding: 13px 10px;
@@ -367,6 +366,7 @@
 }
 
 .mobile_menu-item {
+    cursor: pointer;
     display: flex;
     color: #2d3436;
     padding: 30px 0 0 20px;
@@ -463,6 +463,7 @@ main {
 }
 
 .description_title-btn-ellipsis {
+    cursor: pointer;
     color: #262626;
     margin: 0 0 0 16px;
     font-size: 18px;
@@ -547,6 +548,7 @@ main {
 }
 
 .main_aside_storys-item {
+    cursor: pointer;
     font-weight: 700;
     font-size: 12px;
     display: flex;
@@ -628,6 +630,7 @@ main {
 }
 
 .main_content_bar-wrapper {
+    cursor: pointer;
     width: 32%;
     max-width: 295px;
     margin: 0 0 18px 0;

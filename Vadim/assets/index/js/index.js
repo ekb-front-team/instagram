@@ -2,8 +2,7 @@ $(document).ready(function () {
   /*============== Button_profile-menu ==================*/
 
   $("#header_button-profile").on("click", function () {
-    $(".button_profile-menu").slideToggle();
-    $(".button_profile-menu").css({
+    $(".button_profile-menu").slideToggle().css({
       display: "block",
     });
   });
@@ -23,8 +22,7 @@ $(document).ready(function () {
   /*============== Mobile_menu-aside ====================*/
 
   $(".header_aside-btn_arrow").on("click", function () {
-    $(".mobile_menu-aside").slideToggle();
-    $(".mobile_menu-aside").css({
+    $(".mobile_menu-aside").slideToggle().css({
       display: "block",
     });
   });
@@ -52,8 +50,7 @@ $(document).ready(function () {
   /*============== Mobile_menu-plus ====================*/
 
   $(".header-btn_plus").on("click", function () {
-    $(".mobile_menu-plus").slideToggle();
-    $(".mobile_menu-plus").css({
+    $(".mobile_menu-plus").slideToggle().css({
       display: "block",
     });
   });
@@ -65,7 +62,7 @@ $(document).ready(function () {
    /*Закрываем по клику вне элемента */
   $(document).mouseup(function (e) {
     const container = $(".mobile_menu-plus");
-    const container2 = $("#btn_line-plus, .header-btn_plus");
+    const container2 = $(".header-btn_plus, #btn_line-plus");
     if (
       container.has(e.target).length === 0 &&
       container2.has(e.target).length === 0
@@ -83,8 +80,7 @@ $(document).ready(function () {
   /*============== Mobile_menu-burg ====================*/
 
   $(".header-burg").on("click", function () {
-    $(".mobile_menu-burg").slideToggle();
-    $(".mobile_menu-burg").css({
+    $(".mobile_menu-burg").slideToggle().css({
       display: "block",
     });
   });
