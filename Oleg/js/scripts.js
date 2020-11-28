@@ -5,45 +5,41 @@ $(document).ready(function () {
     taggs = $("#taggs"),
     moreModal = $(".modal_view-more"),
     modalImg = $(".view_modal_img"),
-    viewBtn = $(".gallery_view"),
     msgCounter = +$(".msg_counter").attr("data-counter"),
     togglePosts = $("#togglePosts"),
     name = $(".name"),
     nameDescr = $(".name_descr"),
-    addPhotoBtn = $(".add_photo"),
-    //imageView = $(".gallery_item"),
     toggleTagged = $("#toggleTagged");
-
-  container.hide();
-  moreModal.hide();
-  modalImg.hide();
-  taggs.hide();
 
   $(".gallery_photos").on("click", ".gallery_item", function () {
     let imgAddr = $(this).attr("src");
-    modalImg.attr("src", imgAddr);
-    modalImg.style = "display: block";
+    modalImg.attr("src", imgAddr).css("display", "block");
+    container.css("display", "flex");
     body.css("overflow", "hidden");
-    container.show();
-    modalImg.show();
-    moreModal.hide();
+    moreModal.css("display", "none");
   });
 
-  container.click(function () {
+  $(".modal_container").click(function () {
     body.css("overflow", "auto");
-    moreModal.style = "display: none !important";
-    modalImg.hide();
-    moreModal.hide();
-    container.hide();
+    moreModal.css("display", "none");
+    container.css("display", "none");
+    modalImg.css("display", "none");
+  });
+
+  $(".more_arrow").click(function () {
+    body.css("overflow", "hidden");
+    container.css("display", "flex");
+    moreModal.css("display", "block");
+    modalImg.css("display", "none");
   });
 
   $(".follow").click(function () {
-    $(this).text(function (span, text) {
+    $(this).text(function (_, text) {
       return text == "Follow" ? "Followed" : "Follow";
     });
   });
 
-  viewBtn.click(function () {
+  $(".gallery_view").click(function () {
     $(".gallery_view").removeClass("active_view");
     $(this).toggleClass("active_view");
   });
@@ -80,13 +76,7 @@ $(document).ready(function () {
     toggleAfter();
   });
 
-  $(".more_arrow").click(function () {
-    modalImg.hide();
-    container.show();
-    moreModal.show();
-    body.css("overflow", "hidden");
-    moreModal.style = "display: block";
-  });
+  taggs.hide();
 
   togglePosts.click(function () {
     gallery.show();
@@ -98,7 +88,7 @@ $(document).ready(function () {
     taggs.show();
   });
 
-  name.click(function () {
+  $(".name").click(function () {
     let changeName = "";
     checkPrompt();
 
@@ -117,26 +107,21 @@ $(document).ready(function () {
     return Math.floor(min + Math.random() * (max - min));
   }
 
-  addPhotoBtn.click(function () {
+  let result;
+
+  $.ajax("https://picsum.photos/v2/list?page=2&limit=100", {
+    success: function (data) {
+      result = data;
+    },
+  });
+
+  $(".add_photo").click(function () {
     const newWrp = $('<div class="photo_wrp"></div>');
     const newImg = $('<img class="gallery_item" alt="new photo">');
-    const loader = $(
-      '<div id="cube-loader"><div class="caption"><div class="cube-loader"><div class="cube loader-1"></div><div class="cube loader-2"></div><div class="cube loader-4"></div><div class="cube loader-3"></div></div></div></div>'
-    );
 
-    $.ajax("https://picsum.photos/v2/list?page=2&limit=100", {
-      success: function (data) {
-        const src = data[random(1, 100)].download_url;
-        $(".photo_wrp:first-child").after(newWrp);
-        newWrp.append(loader);
-        newImg.attr("src", src + ".jpg");
-      },
-      complete: function () {
-        setTimeout(() => {
-          loader.remove();
-          newWrp.append(newImg);
-        }, 2000);
-      },
-    });
+    const src = result[random(1, 100)].download_url;
+    $(".photo_wrp:first-child").after(newWrp);
+    newWrp.append(newImg);
+    newImg.attr("src", src + ".jpg");
   });
 });
