@@ -10,6 +10,13 @@ $(document).ready(function () {
     name = $(".name"),
     nameDescr = $(".name_descr");
 
+  let result;
+  $.ajax("https://picsum.photos/v2/list?page=2&limit=100", {
+    success: function (data) {
+      result = data;
+    },
+  });
+
   $(".gallery_photos").on("click", ".gallery_item", function () {
     let imgAddr = $(this).attr("src");
     modalImg.attr("src", imgAddr).css("display", "block");
@@ -45,14 +52,6 @@ $(document).ready(function () {
   $(".gallery_view").click(function () {
     $(".gallery_view").removeClass("active_view");
     $(this).toggleClass("active_view");
-  });
-
-  let result;
-
-  $.ajax("https://picsum.photos/v2/list?page=2&limit=100", {
-    success: function (data) {
-      result = data;
-    },
   });
 
   $(".add_photo").click(function () {
