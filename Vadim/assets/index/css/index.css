@@ -14,7 +14,7 @@
     font-weight: 700;
 }
 
-.black-inst {
+.gray-color {
     color: #262626;
 }
 
@@ -42,7 +42,7 @@ button {
     position: fixed;
     left: 50%;
     transform: translate(-50%, -0%);
-    height: 53px;
+    padding: 11px 0;
     border-bottom: solid 1px #DBDBDB;
 }
 
@@ -50,7 +50,6 @@ button {
     max-width: 975px;
     padding: 0 20px;
     justify-content: space-between;
-    height: 53px;
 }
 
 .header-aside {
@@ -82,11 +81,10 @@ button {
 
 .header-search {
     max-width: 192px;
-    height: 29px;
     color: #8F8F8F;
     text-align: center;
     background: #fafafa;
-    padding: 0 35px;
+    padding: 5px 35px;
 }
 
 .header-search::placeholder {
@@ -104,7 +102,6 @@ button {
     position: relative;
     justify-content: space-between;
     max-width: 198px;
-    height: 22px;
 } 
 
 .header-buttons button {
@@ -129,7 +126,7 @@ button {
 .header_button-notification {
     position: absolute;
     width: 22px;
-    height: 22px;
+    padding: 5px;
     color: #fff;
     background: #DC565B;
     border-radius: 50%;
@@ -183,11 +180,11 @@ button {
 }
 
 .profile_menu_list-item p {
-    margin: 0 0 0 20px;
+    margin-left: 20px;
 }
 
 .profile_menu_list-item:last-child p {
-    margin: 0 0 0 10px;
+    margin-left: 10px;
 } 
 
 .header-btn_plus {
@@ -221,7 +218,7 @@ button {
     height: 1px;
     width: 20px;
     background: #262626;
-    margin: 5px 5px;
+    margin: 5px;
 }
 
 .mobile_menu-aside {
@@ -242,7 +239,7 @@ button {
 .menu_aside-profile {
     padding: 0 20px;
     justify-content: space-between;
-    margin: 20px 0 0 0;
+    margin-top: 20px;
 }
 
 .menu_aside_profile-item {
@@ -259,7 +256,7 @@ button {
 }
 
 .menu_aside_profile-item h2 {
-    margin: 0 0 0 10px;
+    margin-left: 10px;
 }
 
 .menu_aside_profile-icon {
@@ -288,7 +285,7 @@ button {
 }
 
 .menu_aside_bar-btn:first-child {
-    margin: 0 25px 0 0;
+    margin-right: 25px;
 }
 
 .mobile_menu_aside-btn_account {
@@ -304,7 +301,7 @@ button {
 }
 
 .mobile_menu_aside-btn_account p {
-    margin: 0 0 0 30px;
+    margin-left: 30px;
 }
 
 .mobile_menu_aside-btn_account:hover {
@@ -377,7 +374,7 @@ button {
 }
 
 .mobile_menu-item i {
-    margin: 0 20px 0 0;
+    margin-right: 20px;
 }
 
 .mobile_menu-item p {
@@ -412,7 +409,7 @@ main {
     background: url("../img/avatar.svg") no-repeat;
     background-size: contain;
     background-position: center;
-    margin: 29px 0 0 0;
+    margin-top: 29px;
 }
 
 .top_avatar_img-btn {
@@ -451,7 +448,7 @@ main {
     color: #fff;
     background: #4094EF;
     border-radius: 3px;
-    margin: 0 0 0 26px;
+    margin-left: 26px;
 }
 
 .description_title-btn-arrow {
@@ -459,13 +456,13 @@ main {
     height: 28px;
     background: #4094EF;
     border-radius: 3px;
-    margin: 0 0 0 8px;
+    margin-left: 8px;
 }
 
 .description_title-btn-ellipsis {
     cursor: pointer;
     color: #262626;
-    margin: 0 0 0 16px;
+    margin-left: 16px;
     font-size: 18px;
 }
 
@@ -478,11 +475,11 @@ main {
     font-size: 15px;
     display: flex;
     align-items: flex-end;
-    margin: 0 39px 0 0;
+    margin-right: 39px;
 }
 
 .description_statistics-item p {
-    margin: 0 0 0 5px;
+    margin-left: 5px;
 }
 
 .description_statistics-item span {
@@ -528,7 +525,7 @@ main {
     border: 1px solid #DBDBDB;
     border-radius: 3px;
     background: #fff;
-    margin: 15px 0 0 0;
+    margin-top: 15px;
     width: 100%;
     max-width: 540px;
     height: 30px;
@@ -538,7 +535,7 @@ main {
 .main_aside-storys {
     width: 100%;
     height: 120px;
-    margin: 56px 0 0 0;
+    margin-top: 56px;
 }
 
 .main_aside_storys-slider {
@@ -555,7 +552,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 0 50px 0 0;
+    margin-right: 50px;
 }
 
 .aside_storys_item-circle {
@@ -577,7 +574,7 @@ main {
 }
 
 .main_aside_storys-item p {
-    margin: 11px 0 0 0;
+    margin-top: 11px;
 }
 
 .slick-list {
@@ -593,7 +590,7 @@ main {
 
 .main_center-control {
     border-top: solid 1px #DBDBDB;
-    margin: 55px 0 0 0;
+    margin-top: 55px;
 }
 
 .main_center_control-btn {
@@ -602,7 +599,7 @@ main {
     font-size: 12px;
     display: flex;
     padding: 20px 0;
-    margin: -1px 0 0 0;
+    margin-top: -1px;
     border-top: 1px solid transparent;
     color: #8F8F8F;
     text-transform: uppercase;
@@ -614,7 +611,7 @@ main {
 }
 
 .main_center_control-btn p {
-    margin: 0 0 0 10px;
+    margin-left: 10px;
 }
 
 .main_center_control-btn:first-child {
@@ -623,7 +620,7 @@ main {
 
 .main-content {
     width: 100%;
-    margin: 2px 0 0 0;
+    margin-top: 2px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -633,7 +630,7 @@ main {
     cursor: pointer;
     width: 32%;
     max-width: 295px;
-    margin: 0 0 18px 0;
+    margin-bottom: 18px;
 }
 
 .content_bar_wrapper-img {
@@ -643,7 +640,6 @@ main {
 .modal {
     width: 100%;
     max-width: 500px;
-	display: flex;
 	align-items: center;
 	justify-content: center;
     display: none;
