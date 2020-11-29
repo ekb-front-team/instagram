@@ -115,55 +115,28 @@ $(document).ready(function () {
   
   /*============== Modals ====================*/
 
-  const btns = document.querySelectorAll('.btn');
-  const modalOverlay = document.querySelector('.modal-overlay ');
-  const modals = document.querySelectorAll('.modal');
-  
-  btns.forEach((el) => {
-    el.addEventListener('click', (e) => {
-      let path = e.currentTarget.getAttribute('data-path');
-  
-      modals.forEach((el) => {
-        el.classList.remove('modal--visible');
-      });
-  
-      document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
-      modalOverlay.classList.add('modal-overlay--visible');
+  $('.main_content_bar-wrapper').on('click', function(){
+    $('.modal').show();
+    $('.modal-content').attr('src', '../assets/index/img/Content/content_1.jpg');
+    $('.modal').css({
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center'
+    });
+    $('html, body').css({
+      overflow: 'hidden',
+      height: 'auto'
     });
   });
-  
-  modalOverlay.addEventListener('click', (e) => {
-    console.log(e.target);
-  
-    if (e.target == modalOverlay) {
-      modalOverlay.classList.remove('modal-overlay--visible');
-      modals.forEach((el) => {
-        el.classList.remove('modal--visible');
-      });
-    }
-  });
-  
-  /*Убираем скролл всего сайта при клике на pop up*/
-   $(".main_content_bar-wrapper").on(
-     "click",
-     function () {
-       $("html, body").css({
-         overflow: "hidden",
-         height: "auto",
-       });
-     }
-   );
 
-   /*Добавляем скролл всего сайта при клике вне области контента*/
-   $(document).mouseup(function (e) {
-     var container = $("");
-      if (container.has(e.target).length === 0) {
-       container.hide();
-     }
-     $("html, body").css({
-       overflow: "auto",
-     });
-   });
+  $('.modal, .modal-content').on('click', function(){
+    $('.modal').hide();
+    $('html, body').css(
+      'overflow', 'auto'
+    );
+  });
+
+
 
    /*Скрываем второстепенные элементы*/
    $(".main_content_bar-wrapper").on("click", function () {

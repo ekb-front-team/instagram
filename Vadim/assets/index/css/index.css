@@ -637,7 +637,7 @@ main {
     width: 100%;
 }
 
-.modal {
+/* .modal {
     width: 100%;
     max-width: 500px;
 	align-items: center;
@@ -668,6 +668,28 @@ main {
 
 .modal--visible {
 	display: block;
+}
+
+.modal-content {
+    width: 100%;
+} */
+
+.modal {
+    display: none;
+    position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    z-index: 2000;
+    padding: 0 90px;
+}
+
+.modal-wrapper {
+    width: 100%;
+    max-width: 400px;
 }
 
 .modal-content {
