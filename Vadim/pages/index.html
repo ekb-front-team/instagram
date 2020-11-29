@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>Instagram</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/all_img/icon.png" type="images/png" />
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link href="../assets/all_css/start.css" type="text/css" rel="stylesheet" />
+    <link
+      href="../assets/index/css/index.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/index/css/media.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/6e4d9f615d.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header class="header flex">
+      <div class="header-wrapper flex">
+        <img class="header-lable" src="../assets/index/img/logo.png"></img>
+        <div class="header-aside hide gray-color">
+          <div class="header_aside-icon_protection gray-color"><i class="fas fa-lock"></i></div>
+          <h1>Name</h1>
+          <button class="header_aside-btn_arrow border-hide"><i class="fas fa-angle-down"></i></button>
+        </div>
+        <div class="header-bar">
+          <input class="header-search flex border-inst" placeholder="Search"></input>
+          <button class="header-search-icon border-hide"><img src="../assets/index/img/icon/search_icon.png" alt="search"></a>
+        </div>  
+        <!-- header-buttons -->
+        <div class="header-buttons flex">
+          <button class=" border-hide">
+            <img src="../assets/index/img/icon/house_icon.png" alt="house_icon">
+          </button>
+          <button class="header-button border-hide">
+            <img src="../assets/index/img/icon/plane_icon.png" alt="plane_icon">
+            <div class="header_button-notification flex">
+              <p>5</p>
+            </div>
+          </button>
+          <button class="border-hide">
+            <img src="../assets/index/img/icon/compass_icon.png" alt="compass_icon">
+          </button>
+          <button class="border-hide">
+            <img src="../assets/index/img/icon/heart_icon.png" alt="heart_icon">
+          </button>
+          <button id="header_button-profile" class="border-hide">
+            <div class="link-circle_icon"></div>
+          </button>
+          <!-- button_profile-menu -->
+          <div class="button_profile-menu hide">
+            <div class="profile_menu-rhombus"></div>
+            <ul class="profile_menu-list bold">
+              <li class="profile_menu_list-item">
+                <i class="far fa-user-circle"></i>
+                <p>Profile</p></li>
+              <li class="profile_menu_list-item"><i class="far fa-bookmark"></i><p>Saved</p></li>
+              <li class="profile_menu_list-item"><i class="fas fa-cog"></i><p>Settings</p></li>
+              <li class="profile_menu_list-item"><i class="fas fa-sync-alt"></i><p>Switching between accounts</p></li>
+              <li class="profile_menu_list-item"><p>Exit</p></li>
+            </ul>
+          </div>
+        </div>
+        <button class="header-btn_plus hide border-hide">
+          <ul>
+            <li class="header_btn_plus-line"></li>
+            <li class="header_btn_plus-line"></li>
+          </ul>
+        </button>
+        <button class="header-burg hide border-hide">
+          <ul>
+            <li class="header_burg-line"></li>
+            <li class="header_burg-line"></li>
+            <li class="header_burg-line"></li>
+          </ul>
+        </button>
+       </div> 
+    </header>
+    <!-- mobile_menu-aside -->
+      <div class="mobile_menu-aside hide">
+        <button class="mobile_menu-btn_line border-hide" id="btn_line-aside"></button>
+        <div class="menu_aside-profile flex">
+          <div class="menu_aside_profile-item flex bold">
+            <div class="aside_profile_item-avatar"></div>
+            <h2>Name</h2>
+          </div>
+          <div class="menu_aside_profile-icon flex"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="mobile_menu_aside-bar flex">
+          <button class="menu_aside_bar-btn gray-color">367 followers</button>
+          <button class="menu_aside_bar-btn gray-color">Add close friends</button>
+        </div>
+        <button class="mobile_menu_aside-btn_account flex">
+          <ul>
+            <li class="header_btn_plus-line"></li>
+            <li class="header_btn_plus-line"></li>
+          </ul>
+          <p>Add account</p>
+        </button>
+      </div>
+    <!-- mobile_menu-plus -->
+    <div class="mobile_menu-plus hide">
+      <button class="mobile_menu-btn_line border-hide" id="btn_line-plus"></button>
+      <p class="mobile_menu_plus-title bold">Create</p>
+      <ul class="mobile_menu-list">
+        <li class="mobile_menu-item"><i class="fas fa-border-all"></i><p>Post</p></li>
+        <li class="mobile_menu-item"><i class="fas fa-circle-notch"></i><p>Story</p></li>
+        <li class="mobile_menu-item"><i class="fab fa-gratipay"></i><p>Story highlight</p></li>
+        <li class="mobile_menu-item"><i class="fas fa-tv"></i><p>IGTV video</p></li>
+      </ul>
+    </div>
+    <!-- mobile_menu-burg -->
+    <div class="mobile_menu-burg hide">
+      <button class="mobile_menu-btn_line border-hide" id="btn_line-burg"></button>
+      <ul class="mobile_menu-list">
+        <li class="mobile_menu-item"><i class="fas fa-cog"></i><p>Settings</p></li>
+        <li class="mobile_menu-item"><i class="fas fa-history"></i><p>Archive</p></li>
+        <li class="mobile_menu-item"><i class="fas fa-user-clock"></i><p>Your activity</p></li>
+        <li class="mobile_menu-item"><i class="fas fa-qrcode"></i><p>QR Code</p></li>
+        <li class="mobile_menu-item"><i class="far fa-bookmark"></i><p>Saved</p></li>
+        <li class="mobile_menu-item"><i class="fas fa-list-ul"></i><p>Close friends</p></li>
+        <li class="mobile_menu-item"><i class="fas fa-user-plus"></i><p>Discover people</p></li>
+      </ul>
+    </div>
+    <main>
+      <div class="main-top">
+        <div class="main_top-avatar flex">
+          <div class="main_top_avatar-img">
+            <button class="top_avatar_img-btn hide">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="main_top-description">
+          <div class="main_top_description-title flex">
+            <h2 class="description_title-name gray-color">name</h2>
+            <button class="description_title-btn-edit border-hide">Edit Profile</button>
+            <button class="description_title-btn-arrow border-hide"><img src="../assets/index/img/icon/arrow_btn.png" alt="arrow"></button>
+            <i class="description_title-btn-ellipsis fas fa-ellipsis-h"></i>
+          </div>
+          <div class="main_top_description-statistics flex">
+            <div class="description_statistics-item gray-color">
+              <span class="bold">79</span><p>posts</p>
+            </div>
+            <div class="description_statistics-item gray-color">
+              <span class="bold">279</span><p>followers</p>
+            </div>
+            <div class="description_statistics-item gray-color">
+              <span class="bold">179</span><p>following</p>
+            </div>
+          </div>
+          <h3 class="main_top_description-subtitle gray-color">Name</h3>
+          <p class="main_top_description-p gray-color">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+          <a href="#" class="main_top_description-link">bit.ly/35Ce3mX</a>
+        </div>
+      </div>
+      <div class="main_aside-description hide gray-color">
+        <h3 class="main_aside-description-subtitle bold">Name</h3>
+        <p class="main_aside-description-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <a href="#">bit.ly/35Ce3mX</a>
+        <button class="main_aside-description-btn">Edit Profile</button>
+      </div>
+      <!-- main_aside-storys -->
+      <div class="main_aside-storys">
+        <div class="main_aside_storys-slider">
+          <div class="main_aside_storys-item gray-color">
+            <div class="aside_storys_item-circle border-inst flex">
+              <div class="aside_storys_item_circle-img"></div>
+            </div>
+            <p>Name</p>
+          </div>
+          <div class="main_aside_storys-item gray-color">
+            <div class="aside_storys_item-circle border-inst flex">
+              <div class="aside_storys_item_circle-img"></div>
+            </div>
+            <p>Name</p>
+          </div>
+          <div class="main_aside_storys-item gray-color">
+            <div class="aside_storys_item-circle border-inst flex">
+              <div class="aside_storys_item_circle-img"></div>
+            </div>
+            <p>Name</p>
+          </div>
+        </div>
+        <div class="main_aside_storys-slider">
+          <div class="main_aside_storys-item gray-color">
+            <div class="aside_storys_item-circle border-inst flex">
+              <div class="aside_storys_item_circle-img"></div>
+            </div>
+            <p>Name</p>
+          </div>
+          <div class="main_aside_storys-item gray-color">
+            <div class="aside_storys_item-circle border-inst flex">
+              <div class="aside_storys_item_circle-img"></div>
+            </div>
+            <p>Name</p>
+          </div>
+          <div class="main_aside_storys-item gray-color">
+            <div class="aside_storys_item-circle border-inst flex">
+              <div class="aside_storys_item_circle-img"></div>
+            </div>
+            <p>Name</p>
+          </div>
+        </div>
+      </div>
+      <div class="main_center-control flex">
+        <button class="main_center_control-btn border-hide"><i class="fas fa-border-all"></i><p>Posts</p></button>
+        <button class="main_center_control-btn border-hide"><i class="fas fa-user-check"></i><p>Tagged</p></button>
+      </div>
+      <div class="main-content">
+        <div id="photo_1" data-path="photo_content_1" class="main_content_bar-wrapper btn">
+          <img class="content_bar_wrapper-img" src="../assets/index/img/Content/content_1.jpg" alt="photo">
+        </div>
+        <div id="photo_2" data-path="photo_content_2" class="main_content_bar-wrapper btn">
+          <img class="content_bar_wrapper-img" src="../assets/index/img/Content/content_2.jpg" alt="photo">
+        </div>
+        <div id="photo_3" data-path="photo_content_3" class="main_content_bar-wrapper btn">
+          <img class="content_bar_wrapper-img" src="../assets/index/img/Content/content_3.jpg" alt="photo">
+        </div>
+        <div id="photo_4" data-path="photo_content_4" class="main_content_bar-wrapper btn">
+          <img class="content_bar_wrapper-img" src="../assets/index/img/Content/content_4.jpg" alt="photo">
+        </div>
+        <div id="photo_5" data-path="photo_content_5" class="main_content_bar-wrapper btn">
+          <img class="content_bar_wrapper-img" src="../assets/index/img/Content/content_5.jpg" alt="photo">
+        </div>
+        <div id="photo_6" data-path="photo_content_6" class="main_content_bar-wrapper btn">
+          <img class="content_bar_wrapper-img" src="../assets/index/img/Content/content_6.jpg" alt="photo">
+        </div>
+        <div id="photo_7" data-path="photo_content_7" class="main_content_bar-wrapper btn">
+          <img class="content_bar_wrapper-img" src="../assets/index/img/Content/photo.svg" alt="photo">
+        </div>
+        <div id="photo_8" data-path="photo_content_8" class="main_content_bar-wrapper btn">
+          <img class="content_bar_wrapper-img" src="../assets/index/img/Content/photo.svg" alt="photo">
+        </div>
+        <div id="photo_9" data-path="photo_content_9" class="main_content_bar-wrapper btn">
+          <img class="content_bar_wrapper-img" src="../assets/index/img/Content/photo.svg" alt="photo">
+        </div>
+      </div>
+    </main>
+    <!--== Modals ==-->
+    <div class="modals">
+      <div class="modal-overlay flex">
+        <div class="modal modal--1" data-target="photo_content_1">
+          <img class="modal-content" src="../assets/index/img/Content/content_1.jpg" alt="photo">
+        </div>
+        <div class="modal modal--2" data-target="photo_content_2">
+          <img class="modal-content" src="../assets/index/img/Content/content_2.jpg" alt="photo">
+        </div>
+        <div class="modal modal--3" data-target="photo_content_3">
+          <img class="modal-content" src="../assets/index/img/Content/content_3.jpg" alt="photo">
+        </div>
+        <div class="modal modal--4" data-target="photo_content_4">
+          <img class="modal-content" src="../assets/index/img/Content/content_4.jpg" alt="photo">
+        </div>
+        <div class="modal modal--5" data-target="photo_content_5">
+          <img class="modal-content" src="../assets/index/img/Content/content_5.jpg" alt="photo">
+        </div>
+        <div class="modal modal--6" data-target="photo_content_6">
+          <img class="modal-content" src="../assets/index/img/Content/content_6.jpg" alt="photo">
+        </div>
+        <div class="modal modal--7" data-target="photo_content_7">
+          <img class="modal-content" src="../assets/index/img/Content/photo.svg" alt="photo">
+        </div>
+        <div class="modal modal--8" data-target="photo_content_8">
+          <img class="modal-content" src="../assets/index/img/Content/photo.svg" alt="photo">
+        </div>
+        <div class="modal modal--9" data-target="photo_content_9">
+          <img class="modal-content" src="../assets/index/img/Content/photo.svg" alt="photo">
+        </div>
+      </div>
+    </div>
+    <!-- SCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../assets/index/js/index.js"></script>
+    <!-- the connection of the slider -->
+    <script src="../assets/index/js/slick.min.js"></script>
+  </body>
+</html>
+
+
