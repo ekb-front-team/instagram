@@ -115,9 +115,9 @@ $(document).ready(function () {
   
   /*============== Modals ====================*/
 
-  $('.main_content_bar-wrapper').on('click', function(){
-    $('.modal').show();
-    $('.modal-content').attr('src', '../assets/index/img/Content/content_1.jpg');
+  $('.content_bar_wrapper-img').on('click', function(){
+    $('.modal-content').show();
+    $('.modal-content').attr('src', $(this).attr('src'));
     $('.modal').css({
       display: 'flex',
       justifyContent: 'center',
