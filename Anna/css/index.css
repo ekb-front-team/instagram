@@ -25,6 +25,8 @@ header {
 
   position: fixed;
   z-index: 9999;
+
+  min-width: 350px;
 }
 
 .header_block {
@@ -75,6 +77,10 @@ header {
   height: 17px;
 }
 
+.five:hover {
+  background-color: #531153;
+}
+
 .five p {
   font-size: 13px;
   padding-top: 1px;
@@ -87,6 +93,10 @@ header {
   border-radius: 50%;
   width: 22px;
   height: 22px;
+}
+
+.range:hover {
+  background-color: #531153;
 }
 
 /* main */
@@ -122,7 +132,6 @@ header {
 .avatar {
   max-width: 152px;
   width: 100%;
-  height: auto;
   border-radius: 50%;
   margin-right: 100px;
 }
@@ -141,16 +150,19 @@ header {
   padding-top: 21px;
 }
 
-.name button {
+button {
   background: #4094ef;
   color: white;
   max-width: 96px;
   width: 100%;
-  height: auto;
   border-radius: 4px;
   border: 0;
   margin: 6px 50px;
   padding: 4px 0;
+}
+
+button:hover {
+  background-color: #531153;
 }
 
 .posts {
@@ -253,7 +265,7 @@ header {
 /* block_images */
 
 .block_images {
-  padding: 19px 10px 122px 10px;
+  padding: 19px 10px 20px 10px;
 }
 
 .images {
