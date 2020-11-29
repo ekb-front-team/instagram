@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram-copy</title>
+    <link rel="shortcut icon" href="./images/icon_logo.png" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="./js/jquery-3.5.1.min.js"></script>
+
+    <script src="./js/scripts.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header_wrapper">
+          <a href="index.html" class="header_logo_link">
+            <img src="./images/logo.svg" alt="logo" class="header_logo_img" />
+          </a>
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search"
+            class="header_search_input"
+          />
+          <nav class="navigation">
+            <ul class="navigation_list">
+              <li>
+                <a href="#"
+                  ><img
+                    src="./images/home_icon.svg"
+                    alt="home"
+                    class="menu_link"
+                /></a>
+              </li>
+              <li>
+                <a href="#" class="msg_counter" data-counter="0"
+                  ><img
+                    src="./images/messages_icon.svg"
+                    alt="messages"
+                    class="menu_link animate__animated"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./images/map_icon.svg" alt="map" class="menu_link"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./images/likes_icon.svg"
+                    alt="likes"
+                    class="menu_link"
+                /></a>
+              </li>
+              <li><a href="#" class="menu_link user_avatar"></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="user_profile">
+        <div class="container">
+          <div class="user_profile_wrapper">
+            <div class="user_profile_photo"></div>
+            <div class="user_profile_information">
+              <div class="information_follow">
+                <div class="name text_overflow">name</div>
+                <button class="follow">Follow</button>
+                <button href="#" class="more_arrow"></button>
+                <div class="another_dots">
+                  <a href="#"
+                    ><svg
+                      width="20"
+                      height="4"
+                      viewBox="0 0 20 4"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="2" cy="2" r="2" fill="#262626" />
+                      <circle cx="10" cy="2" r="2" fill="#262626" />
+                      <circle cx="18" cy="2" r="2" fill="#262626" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="user_profile_stat">
+                <ul class="stat_list">
+                  <li><span class="bold">79</span> posts</li>
+                  <li><span class="bold">379</span> followers</li>
+                  <li><span class="bold">179</span> following</li>
+                </ul>
+              </div>
+              <div class="user_profile_descr">
+                <div class="name_descr">Name</div>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text.
+                </p>
+                <a href="#" class="descr_link">bit.ly/35Ce3mX</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="stories">
+        <div class="container">
+          <div class="stories_wrapper">
+            <div class="stories_item">
+              <div class="storie_preview">
+                <img src="./images/test_bg.png" alt="story" class="story_img" />
+              </div>
+              <p class="storie_kind">Name</p>
+            </div>
+            <div class="stories_item">
+              <div class="storie_preview">
+                <img src="./images/test_bg.png" alt="story" class="story_img" />
+              </div>
+              <p class="storie_kind">Name</p>
+            </div>
+            <div class="stories_item">
+              <div class="storie_preview">
+                <img src="./images/test_bg.png" alt="story" class="story_img" />
+              </div>
+              <p class="storie_kind">Name</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="container">
+          <div class="gallery_header">
+            <button class="gallery_view active_view" id="togglePosts">
+              <i class="fa fa-th fa-icon" aria-hidden="true"></i>Posts
+            </button>
+            <button class="gallery_view" id="toggleTagged">
+              <i class="fa fa-address-book-o fa-icon" aria-hidden="true"></i
+              >Tagged
+            </button>
+          </div>
+          <div class="gallery_photos">
+            <div class="photo_wrp">
+              <button class="add_photo"></button>
+            </div>
+            <div class="photo_wrp">
+              <img
+                src="./images/gallery/img1.jpg"
+                alt="photo"
+                class="gallery_item"
+              />
+            </div>
+            <div class="photo_wrp">
+              <img
+                src="./images/gallery/img2.jpg"
+                alt="photo"
+                class="gallery_item"
+              />
+            </div>
+            <div class="photo_wrp">
+              <img
+                src="./images/gallery/img3.jpg"
+                alt="photo"
+                class="gallery_item"
+              />
+            </div>
+            <div class="photo_wrp">
+              <img
+                src="./images/gallery/img4.jpg"
+                alt="photo"
+                class="gallery_item"
+              />
+            </div>
+            <div class="photo_wrp">
+              <img
+                src="./images/gallery/img5.jpg"
+                alt="photo"
+                class="gallery_item"
+              />
+            </div>
+            <div class="photo_wrp">
+              <img
+                src="./images/gallery/img6.jpg"
+                alt="photo"
+                class="gallery_item"
+              />
+            </div>
+            <div class="photo_wrp">
+              <img
+                src="./images/gallery/img1.jpg"
+                alt="photo"
+                class="gallery_item"
+              />
+            </div>
+            <div class="photo_wrp">
+              <img
+                src="./images/gallery/img3.jpg"
+                alt="photo"
+                class="gallery_item"
+              />
+            </div>
+            <div class="photo_wrp">
+              <img
+                src="./images/gallery/img1.jpg"
+                alt="photo"
+                class="gallery_item"
+              />
+            </div>
+          </div>
+          <div id="taggs">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A402aa2b9d1cb0a29ea7783336ddd8296a4fee1972040bc6c04024c2d48d377a2&amp;source=constructor"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+        <div class="modal_container">
+          <div id="modal_view">
+            <img src="" alt="photo" class="view_modal_img" />
+          </div>
+          <div class="modal_view-more">
+            <h1>Данный раздел находится в разработке ☺</h1>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
