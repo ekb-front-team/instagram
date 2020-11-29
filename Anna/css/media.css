@@ -1,0 +1,127 @@
+@media only screen and (max-width: 890px) {
+  .preview {
+    padding: 20px 0px;
+  }
+}
+
+@media only screen and (max-width: 818px) {
+  .images img {
+    max-width: 350px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .avatar {
+    margin: 0px 30px 0px 0px;
+  }
+
+  .posts p {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .input {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avatar,
+  .posts {
+    margin: 0px;
+  }
+
+  .name {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .posts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .posts p {
+    font-size: 15px;
+    margin-right: 0px;
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  .about p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .posts {
+    margin: 0px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .name button {
+    margin: 6px 30px;
+  }
+
+  .posts p,
+  .about p {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .instagram {
+    margin-right: 25px;
+    width: 80px;
+  }
+
+  .badges {
+    width: 150px;
+    height: 20px;
+  }
+
+  .five {
+    width: 15px;
+    height: 15px;
+  }
+
+  .five p {
+    font-size: 10px;
+    padding-top: 2px;
+
+    text-align: center;
+  }
+
+  .range {
+    width: 20px;
+    height: 20px;
+  }
+
+  .preview {
+    padding: 20px 0 20px 0;
+  }
+
+  .stories {
+    margin: 20px 0px 20px 0px;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .story img {
+    width: 45px;
+  }
+}
